@@ -8,548 +8,154 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <mono_1/out> ;
-    ingen:head <playback_1> .
-
-_:b2
-    ingen:tail <DS1/Out1> ;
-    ingen:head <GUITARIX/in> .
-
-_:b3
-    ingen:tail <GUITARIX/out> ;
-    ingen:head <CABINET/in> .
-
-_:b4
-    ingen:tail <wah/out> ;
-    ingen:head <Noisegate/in> .
-
-_:b5
-    ingen:tail <CABINET/out> ;
-    ingen:head <wah/in> .
-
-_:b6
-    ingen:tail <chor/OUTPUT_L> ;
-    ingen:head <echo/inputleft> .
-
-_:b7
-    ingen:tail <echo/outputleft> ;
-    ingen:head <reve/INPUT_L> .
-
-_:b8
     ingen:tail <chor/OUTPUT_R> ;
     ingen:head <echo/inputright> .
 
-_:b9
-    ingen:tail <echo/outputright> ;
-    ingen:head <reve/INPUT_R> .
+_:b2
+    ingen:tail <wah/out> ;
+    ingen:head <Noisegate/in> .
 
-_:b10
-    ingen:tail <reve/OUTPUT_L> ;
-    ingen:head <mono_1/in> .
+_:b3
+    ingen:tail <echo/outputleft> ;
+    ingen:head <reve/INPUT_L> .
 
-_:b11
+_:b4
+    ingen:tail <CABINET/out> ;
+    ingen:head <wah/in> .
+
+_:b5
     ingen:tail <mono/outL> ;
     ingen:head <chor/INPUT_L> .
 
-_:b12
-    ingen:tail <Noisegate/out> ;
-    ingen:head <mono/in> .
+_:b6
+    ingen:tail <echo/outputright> ;
+    ingen:head <reve/INPUT_R> .
 
-_:b13
+_:b7
+    ingen:tail <mono_1/out> ;
+    ingen:head <playback_1> .
+
+_:b8
+    ingen:tail <reve/OUTPUT_L> ;
+    ingen:head <mono_1/in> .
+
+_:b9
+    ingen:tail <chor/OUTPUT_L> ;
+    ingen:head <echo/inputleft> .
+
+_:b10
+    ingen:tail <GUITARIX/out> ;
+    ingen:head <CABINET/in> .
+
+_:b11
     ingen:tail <mono/outR> ;
     ingen:head <chor/INPUT_R> .
+
+_:b12
+    ingen:tail <DS1/Out1> ;
+    ingen:head <GUITARIX/in> .
+
+_:b13
+    ingen:tail <Noisegate/out> ;
+    ingen:head <mono/in> .
 
 _:b14
     ingen:tail <capture_1> ;
     ingen:head <DS1/In> .
 
-<CABINET>
-    ingen:canvasX 535.1 ;
-    ingen:canvasY 975.1 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 34 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <CABINET/in> ,
-             <CABINET/out> ,
-             <CABINET/CLevel> ,
-             <CABINET/CBass> ,
-             <CABINET/CTreble> ,
-             <CABINET/c_model> ,
-             <CABINET/SCHEDULE> ,
-             <CABINET/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_cabinet#CABINET> ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<CABINET/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<CABINET/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<CABINET/CLevel>
-    ingen:value 1.500000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/CBass>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/CTreble>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/c_model>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/SCHEDULE>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<CABINET/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<DS1>
-    ingen:canvasX 688.3 ;
-    ingen:canvasY 251.2 ;
+<mono>
+    ingen:canvasX 1246.0 ;
+    ingen:canvasY 133.0 ;
     ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <DS1/In> ,
-             <DS1/Out1> ,
-             <DS1/Tone> ,
-             <DS1/Level> ,
-             <DS1/Dist> ,
-             <DS1/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/mod-devel/DS1> ;
+    lv2:port <mono/in> ,
+             <mono/outL> ,
+             <mono/outR> ,
+             <mono/bypass> ,
+             <mono/cycle> ,
+             <mono/phase> ,
+             <mono/width> ,
+             <mono/depth> ,
+             <mono/noClip> ,
+             <mono/lampDrive> ,
+             <mono/lampL> ,
+             <mono/lampR> ,
+             <mono/meterOutL> ,
+             <mono/meterOutR> ,
+             <mono/meterIn> ,
+             <mono/:bypass> ;
+    lv2:prototype <http://invadarecords.com/plugins/lv2/phaser/mono> ;
     pedal:preset <> ;
     a ingen:Block .
 
-<DS1/In>
+<mono/in>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<DS1/In>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<DS1/Tone>
-    ingen:value 0.094041 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<DS1/Level>
-    ingen:value 0.253035 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<DS1/Dist>
-    ingen:value 0.195802 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<DS1/:bypass>
-    ingen:value 1 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 62 ;
-        a midi:Controller ;
-    ] ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX>
-    ingen:canvasX 549.0 ;
-    ingen:canvasY 1281.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 34 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <GUITARIX/in> ,
-             <GUITARIX/out> ,
-             <GUITARIX/MasterGain> ,
-             <GUITARIX/PreGain> ,
-             <GUITARIX/Distortion> ,
-             <GUITARIX/Drive> ,
-             <GUITARIX/Middle> ,
-             <GUITARIX/Bass> ,
-             <GUITARIX/Treble> ,
-             <GUITARIX/Cabinet> ,
-             <GUITARIX/Presence> ,
-             <GUITARIX/model> ,
-             <GUITARIX/t_model> ,
-             <GUITARIX/c_model> ,
-             <GUITARIX/SCHEDULE> ,
-             <GUITARIX/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<GUITARIX/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<GUITARIX/in>
+<mono/in>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<GUITARIX/MasterGain>
-    ingen:value -17.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/PreGain>
-    ingen:value 9.955357 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Distortion>
-    ingen:value 58.234375 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Drive>
-    ingen:value 0.480692 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Middle>
-    ingen:value 0.562500 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Bass>
-    ingen:value 0.390625 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Treble>
-    ingen:value 0.658482 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Cabinet>
-    ingen:value 10.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/Presence>
-    ingen:value 5.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<GUITARIX/model>
+<mono/bypass>
     ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<GUITARIX/t_model>
-    ingen:value 9.000000 ;
+<mono/cycle>
+    ingen:value 25.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<GUITARIX/c_model>
-    ingen:value 18.000000 ;
+<mono/phase>
+    ingen:value 45.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<GUITARIX/SCHEDULE>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<GUITARIX/:bypass>
-    ingen:value 0 ;
+<mono/width>
+    ingen:value 8.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Noisegate>
-    ingen:canvasX 1653.0 ;
-    ingen:canvasY 778.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 26 ;
-    lv2:minorVersion 9 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <Noisegate/in> ,
-             <Noisegate/out> ,
-             <Noisegate/open> ,
-             <Noisegate/attack> ,
-             <Noisegate/close> ,
-             <Noisegate/mains> ,
-             <Noisegate/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/caps/Noisegate> ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<Noisegate/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<Noisegate/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<Noisegate/open>
-    ingen:value -21.914062 ;
+<mono/depth>
+    ingen:value 28.794643 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Noisegate/attack>
-    ingen:value 0.055804 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/close>
-    ingen:value -46.517857 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/mains>
-    ingen:value 60.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor>
-    ingen:canvasX 1686.0 ;
-    ingen:canvasY 186.0 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <chor/INPUT_L> ,
-             <chor/INPUT_R> ,
-             <chor/OUTPUT_L> ,
-             <chor/OUTPUT_R> ,
-             <chor/BYPASS> ,
-             <chor/WETDRY> ,
-             <chor/PAN> ,
-             <chor/TEMPO> ,
-             <chor/RND> ,
-             <chor/TYPE> ,
-             <chor/WIDTH> ,
-             <chor/DEPTH> ,
-             <chor/DELAY> ,
-             <chor/FB> ,
-             <chor/LRCR> ,
-             <chor/SUB> ,
-             <chor/INTENSE> ,
-             <chor/:bypass> ;
-    lv2:prototype <http://rakarrack.sourceforge.net/effects.html#chor> ;
-    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1> ;
-    a ingen:Block .
-
-<chor/INPUT_L>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<chor/INPUT_R>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<chor/INPUT_L>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<chor/INPUT_R>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<chor/BYPASS>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/WETDRY>
-    ingen:value 97.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/PAN>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/TEMPO>
-    ingen:value 39.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/RND>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/TYPE>
+<mono/noClip>
     ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<chor/WIDTH>
-    ingen:value -4.000000 ;
+<mono/lampDrive>
     a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/DEPTH>
-    ingen:value 10.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/DELAY>
-    ingen:value 3.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/FB>
-    ingen:value 62.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/LRCR>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/SUB>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/INTENSE>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/:bypass>
-    ingen:value 1 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo>
-    ingen:canvasX 2246.3 ;
-    ingen:canvasY 218.3 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 2 ;
-    lv2:minorVersion 7 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <echo/inputleft> ,
-             <echo/inputright> ,
-             <echo/outputleft> ,
-             <echo/outputright> ,
-             <echo/ldelay> ,
-             <echo/lfeedback> ,
-             <echo/rhaasdelay> ,
-             <echo/rhaasfeedback> ,
-             <echo/lecholevel> ,
-             <echo/recholevel> ,
-             <echo/dryLevel> ,
-             <echo/crossmode> ,
-             <echo/haaseffect> ,
-             <echo/swapoutputs> ,
-             <echo/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/tap/echo> ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<echo/inputleft>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<echo/inputright>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<echo/inputleft>
-    a lv2:AudioPort ,
         lv2:OutputPort .
 
-<echo/inputright>
-    a lv2:AudioPort ,
+<mono/lampL>
+    a lv2:ControlPort ,
         lv2:OutputPort .
 
-<echo/ldelay>
-    ingen:value 62.500000 ;
+<mono/lampR>
     a lv2:ControlPort ,
-        lv2:InputPort .
+        lv2:OutputPort .
 
-<echo/lfeedback>
-    ingen:value 50.000000 ;
+<mono/meterOutL>
     a lv2:ControlPort ,
-        lv2:InputPort .
+        lv2:OutputPort .
 
-<echo/rhaasdelay>
-    ingen:value 300.000000 ;
+<mono/meterOutR>
     a lv2:ControlPort ,
-        lv2:InputPort .
+        lv2:OutputPort .
 
-<echo/rhaasfeedback>
-    ingen:value 50.000000 ;
+<mono/meterIn>
     a lv2:ControlPort ,
-        lv2:InputPort .
+        lv2:OutputPort .
 
-<echo/lecholevel>
-    ingen:value -19.821429 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo/recholevel>
-    ingen:value -15.714286 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo/dryLevel>
-    ingen:value -1.071429 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo/crossmode>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo/haaseffect>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo/swapoutputs>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<echo/:bypass>
+<mono/:bypass>
     ingen:value 1 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 63 ;
-        a midi:Controller ;
-    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -582,7 +188,7 @@ _:b14
         lv2:OutputPort .
 
 <mono_1/gain>
-    ingen:value -7.678571 ;
+    ingen:value 2.232143 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -608,7 +214,7 @@ _:b14
 <reve>
     ingen:canvasX 2634.0 ;
     ingen:canvasY 211.0 ;
-    ingen:enabled true ;
+    ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
@@ -706,7 +312,111 @@ _:b14
         lv2:InputPort .
 
 <reve/:bypass>
+    ingen:value 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo>
+    ingen:canvasX 2246.3 ;
+    ingen:canvasY 218.3 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 2 ;
+    lv2:minorVersion 7 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <echo/inputleft> ,
+             <echo/inputright> ,
+             <echo/outputleft> ,
+             <echo/outputright> ,
+             <echo/ldelay> ,
+             <echo/lfeedback> ,
+             <echo/rhaasdelay> ,
+             <echo/rhaasfeedback> ,
+             <echo/lecholevel> ,
+             <echo/recholevel> ,
+             <echo/dryLevel> ,
+             <echo/crossmode> ,
+             <echo/haaseffect> ,
+             <echo/swapoutputs> ,
+             <echo/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/tap/echo> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<echo/inputleft>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<echo/inputright>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<echo/inputleft>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<echo/inputright>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<echo/ldelay>
+    ingen:value 62.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/lfeedback>
+    ingen:value 50.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/rhaasdelay>
+    ingen:value 300.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/rhaasfeedback>
+    ingen:value 50.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/lecholevel>
+    ingen:value -19.821429 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/recholevel>
+    ingen:value -15.714286 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/dryLevel>
+    ingen:value -1.071429 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/crossmode>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/haaseffect>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/swapoutputs>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<echo/:bypass>
     ingen:value 0 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 63 ;
+        a midi:Controller ;
+    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -764,99 +474,389 @@ _:b14
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono>
-    ingen:canvasX 1246.9 ;
-    ingen:canvasY 133.8 ;
+<Noisegate>
+    ingen:canvasX 1653.0 ;
+    ingen:canvasY 778.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 26 ;
+    lv2:minorVersion 9 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <Noisegate/in> ,
+             <Noisegate/out> ,
+             <Noisegate/open> ,
+             <Noisegate/attack> ,
+             <Noisegate/close> ,
+             <Noisegate/mains> ,
+             <Noisegate/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/caps/Noisegate> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<Noisegate/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<Noisegate/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<Noisegate/open>
+    ingen:value -43.337054 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/attack>
+    ingen:value 0.055804 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/close>
+    ingen:value -60.982143 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/mains>
+    ingen:value 60.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor>
+    ingen:canvasX 1686.0 ;
+    ingen:canvasY 186.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <mono/in> ,
-             <mono/outL> ,
-             <mono/outR> ,
-             <mono/bypass> ,
-             <mono/cycle> ,
-             <mono/phase> ,
-             <mono/width> ,
-             <mono/depth> ,
-             <mono/noClip> ,
-             <mono/lampDrive> ,
-             <mono/lampL> ,
-             <mono/lampR> ,
-             <mono/meterOutL> ,
-             <mono/meterOutR> ,
-             <mono/meterIn> ,
-             <mono/:bypass> ;
-    lv2:prototype <http://invadarecords.com/plugins/lv2/phaser/mono> ;
-    pedal:preset <> ;
+    lv2:port <chor/INPUT_L> ,
+             <chor/INPUT_R> ,
+             <chor/OUTPUT_L> ,
+             <chor/OUTPUT_R> ,
+             <chor/BYPASS> ,
+             <chor/WETDRY> ,
+             <chor/PAN> ,
+             <chor/TEMPO> ,
+             <chor/RND> ,
+             <chor/TYPE> ,
+             <chor/WIDTH> ,
+             <chor/DEPTH> ,
+             <chor/DELAY> ,
+             <chor/FB> ,
+             <chor/LRCR> ,
+             <chor/SUB> ,
+             <chor/INTENSE> ,
+             <chor/:bypass> ;
+    lv2:prototype <http://rakarrack.sourceforge.net/effects.html#chor> ;
+    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1> ;
     a ingen:Block .
 
-<mono/in>
+<chor/INPUT_L>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<mono/in>
+<chor/INPUT_R>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<chor/INPUT_L>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<mono/bypass>
+<chor/INPUT_R>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<chor/BYPASS>
     ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono/cycle>
-    ingen:value 25.000000 ;
+<chor/WETDRY>
+    ingen:value 42.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono/phase>
-    ingen:value 45.000000 ;
+<chor/PAN>
+    ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono/width>
-    ingen:value 8.000000 ;
+<chor/TEMPO>
+    ingen:value 33.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono/depth>
-    ingen:value 25.781250 ;
+<chor/RND>
+    ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono/noClip>
+<chor/TYPE>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/WIDTH>
+    ingen:value 24.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/DEPTH>
+    ingen:value 40.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/DELAY>
+    ingen:value 85.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/FB>
+    ingen:value 64.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/LRCR>
+    ingen:value 118.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/SUB>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/INTENSE>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<DS1>
+    ingen:canvasX 688.3 ;
+    ingen:canvasY 251.2 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <DS1/In> ,
+             <DS1/Out1> ,
+             <DS1/Tone> ,
+             <DS1/Level> ,
+             <DS1/Dist> ,
+             <DS1/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/DS1> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<DS1/In>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<DS1/In>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<DS1/Tone>
+    ingen:value 0.094041 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<DS1/Level>
+    ingen:value 0.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<DS1/Dist>
+    ingen:value 0.195802 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<DS1/:bypass>
+    ingen:value 1 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 62 ;
+        a midi:Controller ;
+    ] ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX>
+    ingen:canvasX 549.0 ;
+    ingen:canvasY 1281.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 34 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <GUITARIX/in> ,
+             <GUITARIX/out> ,
+             <GUITARIX/MasterGain> ,
+             <GUITARIX/PreGain> ,
+             <GUITARIX/Distortion> ,
+             <GUITARIX/Drive> ,
+             <GUITARIX/Middle> ,
+             <GUITARIX/Bass> ,
+             <GUITARIX/Treble> ,
+             <GUITARIX/Cabinet> ,
+             <GUITARIX/Presence> ,
+             <GUITARIX/model> ,
+             <GUITARIX/t_model> ,
+             <GUITARIX/c_model> ,
+             <GUITARIX/SCHEDULE> ,
+             <GUITARIX/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_amp#GUITARIX> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<GUITARIX/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<GUITARIX/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<GUITARIX/MasterGain>
+    ingen:value 1.562500 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/PreGain>
+    ingen:value 2.723214 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/Distortion>
     ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<mono/lampDrive>
+<GUITARIX/Drive>
+    ingen:value 0.489531 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/Middle>
+    ingen:value 0.562500 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/Bass>
+    ingen:value 0.390625 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/Treble>
+    ingen:value 0.658482 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/Cabinet>
+    ingen:value 10.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/Presence>
+    ingen:value 5.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/model>
+    ingen:value 6.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/t_model>
+    ingen:value 15.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/c_model>
+    ingen:value 18.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<GUITARIX/SCHEDULE>
     a lv2:ControlPort ,
         lv2:OutputPort .
 
-<mono/lampL>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<mono/lampR>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<mono/meterOutL>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<mono/meterOutR>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<mono/meterIn>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<mono/:bypass>
+<GUITARIX/:bypass>
     ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET>
+    ingen:canvasX 535.1 ;
+    ingen:canvasY 975.1 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 34 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <CABINET/in> ,
+             <CABINET/out> ,
+             <CABINET/CLevel> ,
+             <CABINET/CBass> ,
+             <CABINET/CTreble> ,
+             <CABINET/c_model> ,
+             <CABINET/SCHEDULE> ,
+             <CABINET/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_cabinet#CABINET> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<CABINET/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<CABINET/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<CABINET/CLevel>
+    ingen:value 1.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/CBass>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/CTreble>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/c_model>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/SCHEDULE>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<CABINET/:bypass>
+    ingen:value 1 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -962,12 +962,12 @@ _:b14
     doap:name "Rush'n" ;
     pedal:unitName "Unknown" ;
     pedal:unitModel "Unknown" ;
-    pedal:width 2676 ;
-    pedal:height 2042 ;
+    pedal:width 2512 ;
+    pedal:height 2328 ;
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 38 ;
+    pedal:version 39 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -983,16 +983,16 @@ _:b14
               _:b12 ,
               _:b13 ,
               _:b14 ;
-    ingen:block <CABINET> ,
-                <DS1> ,
-                <GUITARIX> ,
-                <Noisegate> ,
-                <chor> ,
-                <echo> ,
+    ingen:block <mono> ,
                 <mono_1> ,
                 <reve> ,
+                <echo> ,
                 <wah> ,
-                <mono> ;
+                <Noisegate> ,
+                <chor> ,
+                <DS1> ,
+                <GUITARIX> ,
+                <CABINET> ;
     lv2:port <:bpb> ,
              <:bpm> ,
              <:rolling> ,
