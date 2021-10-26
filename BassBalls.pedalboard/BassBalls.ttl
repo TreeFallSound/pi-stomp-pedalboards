@@ -8,40 +8,44 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <stereo/outL> ;
-    ingen:head <playback_1> .
-
-_:b2
-    ingen:tail <AmpVTS/out> ;
-    ingen:head <CABINET/in> .
-
-_:b3
     ingen:tail <CABINET/out> ;
     ingen:head <Noisegate/in> .
 
-_:b4
+_:b2
+    ingen:tail <stereo/outL> ;
+    ingen:head <playback_1> .
+
+_:b3
     ingen:tail <StompBox_fuzz/OUTPUT_L> ;
     ingen:head <_bottlerocket_/in> .
 
+_:b4
+    ingen:tail <AmpVTS/out> ;
+    ingen:head <CABINET/in> .
+
 _:b5
-    ingen:tail <_bottlerocket_/out> ;
-    ingen:head <AmpVTS/in> .
+    ingen:tail <Noisegate/out> ;
+    ingen:head <chor/INPUT_L> .
 
 _:b6
     ingen:tail <chor/OUTPUT_L> ;
-    ingen:head <stereo/inL> .
+    ingen:head <eq/Input> .
 
 _:b7
-    ingen:tail <Noisegate/out> ;
-    ingen:head <chor/INPUT_L> .
+    ingen:tail <eq/Output> ;
+    ingen:head <stereo/inL> .
 
 _:b8
     ingen:tail <capture_1> ;
     ingen:head <StompBox_fuzz/INPUT_L> .
 
+_:b9
+    ingen:tail <_bottlerocket_/out> ;
+    ingen:head <AmpVTS/in> .
+
 <AmpVTS>
-    ingen:canvasX 322.0 ;
-    ingen:canvasY 874.0 ;
+    ingen:canvasX 142.0 ;
+    ingen:canvasY 904.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 26 ;
@@ -135,8 +139,8 @@ _:b8
         lv2:InputPort .
 
 <CABINET>
-    ingen:canvasX 1439.0 ;
-    ingen:canvasY 883.0 ;
+    ingen:canvasX 1265.0 ;
+    ingen:canvasY 901.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
@@ -164,12 +168,12 @@ _:b8
         lv2:OutputPort .
 
 <CABINET/CLevel>
-    ingen:value 2.810268 ;
+    ingen:value 3.237165 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <CABINET/CBass>
-    ingen:value 0.066964 ;
+    ingen:value -3.549107 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -193,8 +197,8 @@ _:b8
         lv2:InputPort .
 
 <Noisegate>
-    ingen:canvasX 1224.0 ;
-    ingen:canvasY 297.0 ;
+    ingen:canvasX 1969.0 ;
+    ingen:canvasY 804.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 26 ;
@@ -246,8 +250,8 @@ _:b8
         lv2:InputPort .
 
 <StompBox_fuzz>
-    ingen:canvasX 223.0 ;
-    ingen:canvasY 305.0 ;
+    ingen:canvasX 212.0 ;
+    ingen:canvasY 98.0 ;
     ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
@@ -321,8 +325,8 @@ _:b8
         lv2:InputPort .
 
 <_bottlerocket_>
-    ingen:canvasX 627.0 ;
-    ingen:canvasY 300.0 ;
+    ingen:canvasX 600.2 ;
+    ingen:canvasY 100.1 ;
     ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
@@ -380,9 +384,9 @@ _:b8
         lv2:InputPort .
 
 <chor>
-    ingen:canvasX 1592.0 ;
-    ingen:canvasY 261.0 ;
-    ingen:enabled false ;
+    ingen:canvasX 1116.0 ;
+    ingen:canvasY 254.0 ;
+    ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
@@ -407,7 +411,7 @@ _:b8
              <chor/INTENSE> ,
              <chor/:bypass> ;
     lv2:prototype <http://rakarrack.sourceforge.net/effects.html#chor> ;
-    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1> ;
+    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_5> ;
     a ingen:Block .
 
 <chor/INPUT_L>
@@ -432,7 +436,7 @@ _:b8
         lv2:InputPort .
 
 <chor/WETDRY>
-    ingen:value 80.000000 ;
+    ingen:value 64.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -442,12 +446,12 @@ _:b8
         lv2:InputPort .
 
 <chor/TEMPO>
-    ingen:value 39.000000 ;
+    ingen:value 46.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/RND>
-    ingen:value 0.000000 ;
+    ingen:value 105.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -457,22 +461,22 @@ _:b8
         lv2:InputPort .
 
 <chor/WIDTH>
-    ingen:value -4.000000 ;
+    ingen:value -40.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/DEPTH>
-    ingen:value 23.000000 ;
+    ingen:value 39.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/DELAY>
-    ingen:value 3.000000 ;
+    ingen:value 19.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/FB>
-    ingen:value 62.000000 ;
+    ingen:value 31.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -482,23 +486,148 @@ _:b8
         lv2:InputPort .
 
 <chor/SUB>
-    ingen:value 0.000000 ;
+    ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/INTENSE>
-    ingen:value 0.000000 ;
+    ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/:bypass>
-    ingen:value 1 ;
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq>
+    ingen:canvasX 1682.3 ;
+    ingen:canvasY 332.4 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 2 ;
+    lv2:minorVersion 7 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <eq/Input> ,
+             <eq/Output> ,
+             <eq/Band1GainDb> ,
+             <eq/Band2GainDb> ,
+             <eq/Band3GainDb> ,
+             <eq/Band4GainDb> ,
+             <eq/Band5GainDb> ,
+             <eq/Band6GainDb> ,
+             <eq/Band7GainDb> ,
+             <eq/Band8GainDb> ,
+             <eq/Band1FreqHz> ,
+             <eq/Band2FreqHz> ,
+             <eq/Band3FreqHz> ,
+             <eq/Band4FreqHz> ,
+             <eq/Band5FreqHz> ,
+             <eq/Band6FreqHz> ,
+             <eq/Band7FreqHz> ,
+             <eq/Band8FreqHz> ,
+             <eq/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/tap/eq> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<eq/Input>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<eq/Input>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<eq/Band1GainDb>
+    ingen:value 7.500000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band2GainDb>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band3GainDb>
+    ingen:value 9.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band4GainDb>
+    ingen:value 3.906250 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band5GainDb>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band6GainDb>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band7GainDb>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band8GainDb>
+    ingen:value -12.734375 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band1FreqHz>
+    ingen:value 75.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band2FreqHz>
+    ingen:value 200.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band3FreqHz>
+    ingen:value 400.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band4FreqHz>
+    ingen:value 700.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band5FreqHz>
+    ingen:value 3000.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band6FreqHz>
+    ingen:value 6000.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band7FreqHz>
+    ingen:value 12000.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/Band8FreqHz>
+    ingen:value 15000.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<eq/:bypass>
+    ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <stereo>
-    ingen:canvasX 2077.0 ;
-    ingen:canvasY 484.0 ;
+    ingen:canvasX 2130.0 ;
+    ingen:canvasY 94.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
@@ -660,12 +789,12 @@ _:b8
     doap:name "BassBalls" ;
     pedal:unitName "Unknown" ;
     pedal:unitModel "Unknown" ;
-    pedal:width 0 ;
-    pedal:height 0 ;
+    pedal:width 2632 ;
+    pedal:height 1624 ;
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 25 ;
+    pedal:version 28 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -674,13 +803,15 @@ _:b8
               _:b5 ,
               _:b6 ,
               _:b7 ,
-              _:b8 ;
+              _:b8 ,
+              _:b9 ;
     ingen:block <AmpVTS> ,
                 <CABINET> ,
                 <Noisegate> ,
                 <StompBox_fuzz> ,
                 <_bottlerocket_> ,
                 <chor> ,
+                <eq> ,
                 <stereo> ;
     lv2:port <:bpb> ,
              <:bpm> ,
