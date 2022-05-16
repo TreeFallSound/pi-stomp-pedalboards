@@ -393,7 +393,7 @@ _:b12
     ingen:value 1 ;
     midi:binding [
         midi:channel 0 ;
-        midi:controllerNumber 19 ;
+        midi:controllerNumber 62 ;
         a midi:Controller ;
     ] ;
     a lv2:ControlPort ,

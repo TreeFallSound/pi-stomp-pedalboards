@@ -8,132 +8,99 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <CABINET/out> ;
-    ingen:head <Noisegate/in> .
+    ingen:tail <_bottlerocket_/out> ;
+    ingen:head <AmpVTS/in> .
 
 _:b2
     ingen:tail <stereo/outL> ;
     ingen:head <playback_1> .
 
 _:b3
-    ingen:tail <StompBox_fuzz/OUTPUT_L> ;
-    ingen:head <_bottlerocket_/in> .
-
-_:b4
     ingen:tail <AmpVTS/out> ;
     ingen:head <CABINET/in> .
 
+_:b4
+    ingen:tail <StompBox_fuzz/OUTPUT_L> ;
+    ingen:head <_bottlerocket_/in> .
+
 _:b5
+    ingen:tail <CABINET/out> ;
+    ingen:head <Noisegate/in> .
+
+_:b6
     ingen:tail <Noisegate/out> ;
     ingen:head <chor/INPUT_L> .
 
-_:b6
-    ingen:tail <chor/OUTPUT_L> ;
-    ingen:head <eq/Input> .
-
 _:b7
-    ingen:tail <eq/Output> ;
-    ingen:head <stereo/inL> .
-
-_:b8
     ingen:tail <capture_1> ;
     ingen:head <StompBox_fuzz/INPUT_L> .
 
-_:b9
-    ingen:tail <_bottlerocket_/out> ;
-    ingen:head <AmpVTS/in> .
+_:b8
+    ingen:tail <chor/OUTPUT_L> ;
+    ingen:head <eq/Input> .
 
-<AmpVTS>
-    ingen:canvasX 142.0 ;
-    ingen:canvasY 904.0 ;
+_:b9
+    ingen:tail <eq/Output> ;
+    ingen:head <stereo/inL> .
+
+<stereo>
+    ingen:canvasX 2130.0 ;
+    ingen:canvasY 94.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
-    lv2:microVersion 26 ;
-    lv2:minorVersion 9 ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <AmpVTS/in> ,
-             <AmpVTS/out> ,
-             <AmpVTS/over> ,
-             <AmpVTS/gain> ,
-             <AmpVTS/bright> ,
-             <AmpVTS/power> ,
-             <AmpVTS/tonestack> ,
-             <AmpVTS/bass> ,
-             <AmpVTS/mid> ,
-             <AmpVTS/treble> ,
-             <AmpVTS/attack> ,
-             <AmpVTS/squash> ,
-             <AmpVTS/low_cut> ,
-             <AmpVTS/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/caps/AmpVTS> ;
+    lv2:port <stereo/inL> ,
+             <stereo/inR> ,
+             <stereo/outL> ,
+             <stereo/outR> ,
+             <stereo/gain> ,
+             <stereo/enable> ,
+             <stereo/mute> ,
+             <stereo/level> ,
+             <stereo/:bypass> ;
+    lv2:prototype <http://gareus.org/oss/lv2/tinygain#stereo> ;
     pedal:preset <> ;
     a ingen:Block .
 
-<AmpVTS/in>
+<stereo/inL>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<AmpVTS/in>
+<stereo/inR>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<stereo/inL>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<AmpVTS/over>
+<stereo/inR>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<stereo/gain>
+    ingen:value -3.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<stereo/enable>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<stereo/mute>
     ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<AmpVTS/gain>
-    ingen:value 0.668527 ;
+<stereo/level>
     a lv2:ControlPort ,
-        lv2:InputPort .
+        lv2:OutputPort .
 
-<AmpVTS/bright>
-    ingen:value 0.672991 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/power>
-    ingen:value 0.597098 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/tonestack>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/bass>
-    ingen:value 0.397321 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/mid>
-    ingen:value 0.750000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/treble>
-    ingen:value 0.876116 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/attack>
-    ingen:value 0.250000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/squash>
-    ingen:value 0.851562 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/low_cut>
-    ingen:value 0.750000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<AmpVTS/:bypass>
+<stereo/:bypass>
     ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
@@ -168,12 +135,12 @@ _:b9
         lv2:OutputPort .
 
 <CABINET/CLevel>
-    ingen:value 3.237165 ;
+    ingen:value 2.810268 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <CABINET/CBass>
-    ingen:value -3.549107 ;
+    ingen:value 0.066964 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -324,6 +291,101 @@ _:b9
     a lv2:ControlPort ,
         lv2:InputPort .
 
+<AmpVTS>
+    ingen:canvasX 142.0 ;
+    ingen:canvasY 904.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 26 ;
+    lv2:minorVersion 9 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <AmpVTS/in> ,
+             <AmpVTS/out> ,
+             <AmpVTS/over> ,
+             <AmpVTS/gain> ,
+             <AmpVTS/bright> ,
+             <AmpVTS/power> ,
+             <AmpVTS/tonestack> ,
+             <AmpVTS/bass> ,
+             <AmpVTS/mid> ,
+             <AmpVTS/treble> ,
+             <AmpVTS/attack> ,
+             <AmpVTS/squash> ,
+             <AmpVTS/low_cut> ,
+             <AmpVTS/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/caps/AmpVTS> ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<AmpVTS/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<AmpVTS/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<AmpVTS/over>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/gain>
+    ingen:value 0.668527 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/bright>
+    ingen:value 0.672991 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/power>
+    ingen:value 0.597098 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/tonestack>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/bass>
+    ingen:value 0.397321 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/mid>
+    ingen:value 0.750000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/treble>
+    ingen:value 0.876116 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/attack>
+    ingen:value 0.250000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/squash>
+    ingen:value 0.851562 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/low_cut>
+    ingen:value 0.750000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<AmpVTS/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
 <_bottlerocket_>
     ingen:canvasX 600.2 ;
     ingen:canvasY 100.1 ;
@@ -365,6 +427,13 @@ _:b9
 
 <_bottlerocket_/GAIN>
     ingen:value 0.898438 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 70 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        a midi:Controller ;
+    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -386,7 +455,7 @@ _:b9
 <chor>
     ingen:canvasX 1116.0 ;
     ingen:canvasY 254.0 ;
-    ingen:enabled true ;
+    ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
@@ -411,7 +480,7 @@ _:b9
              <chor/INTENSE> ,
              <chor/:bypass> ;
     lv2:prototype <http://rakarrack.sourceforge.net/effects.html#chor> ;
-    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_5> ;
+    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1> ;
     a ingen:Block .
 
 <chor/INPUT_L>
@@ -436,7 +505,14 @@ _:b9
         lv2:InputPort .
 
 <chor/WETDRY>
-    ingen:value 64.000000 ;
+    ingen:value 80.000000 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 71 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        a midi:Controller ;
+    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -446,12 +522,12 @@ _:b9
         lv2:InputPort .
 
 <chor/TEMPO>
-    ingen:value 46.000000 ;
+    ingen:value 39.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/RND>
-    ingen:value 105.000000 ;
+    ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -461,22 +537,22 @@ _:b9
         lv2:InputPort .
 
 <chor/WIDTH>
-    ingen:value -40.000000 ;
+    ingen:value -4.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/DEPTH>
-    ingen:value 39.000000 ;
+    ingen:value 23.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/DELAY>
-    ingen:value 19.000000 ;
+    ingen:value 3.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/FB>
-    ingen:value 31.000000 ;
+    ingen:value 62.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -486,17 +562,17 @@ _:b9
         lv2:InputPort .
 
 <chor/SUB>
-    ingen:value 1.000000 ;
+    ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/INTENSE>
-    ingen:value 1.000000 ;
+    ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
 <chor/:bypass>
-    ingen:value 0 ;
+    ingen:value 1 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -625,68 +701,6 @@ _:b9
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<stereo>
-    ingen:canvasX 2130.0 ;
-    ingen:canvasY 94.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <stereo/inL> ,
-             <stereo/inR> ,
-             <stereo/outL> ,
-             <stereo/outR> ,
-             <stereo/gain> ,
-             <stereo/enable> ,
-             <stereo/mute> ,
-             <stereo/level> ,
-             <stereo/:bypass> ;
-    lv2:prototype <http://gareus.org/oss/lv2/tinygain#stereo> ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<stereo/inL>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<stereo/inR>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<stereo/inL>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<stereo/inR>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<stereo/gain>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo/enable>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo/mute>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo/level>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<stereo/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
 <:bpb>
     ingen:value 4.000000 ;
     lv2:index 0 ;
@@ -757,31 +771,9 @@ _:b9
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<serial_midi_in>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 9 ;
-    lv2:name "DIN MIDI In" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "serial_midi_in" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:InputPort .
-
-<serial_midi_out>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 10 ;
-    lv2:name "DIN MIDI In" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "serial_midi_out" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:OutputPort .
-
 <midi_separated_mode>
     ingen:value 0 ;
-    lv2:index 11 ;
+    lv2:index 9 ;
     a atom:AtomPort ,
         lv2:InputPort .
 
@@ -794,7 +786,7 @@ _:b9
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 28 ;
+    pedal:version 30 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -805,22 +797,20 @@ _:b9
               _:b7 ,
               _:b8 ,
               _:b9 ;
-    ingen:block <AmpVTS> ,
+    ingen:block <stereo> ,
                 <CABINET> ,
                 <Noisegate> ,
                 <StompBox_fuzz> ,
+                <AmpVTS> ,
                 <_bottlerocket_> ,
                 <chor> ,
-                <eq> ,
-                <stereo> ;
+                <eq> ;
     lv2:port <:bpb> ,
              <:bpm> ,
              <:rolling> ,
              <midi_separated_mode> ,
              <control_in> ,
              <control_out> ,
-             <serial_midi_in> ,
-             <serial_midi_out> ,
              <capture_1> ,
              <capture_2> ,
              <playback_1> ,
