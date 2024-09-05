@@ -1,0 +1,263 @@
+{
+    "current": 1,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 2800.0,
+                        "drylevel": -4.0,
+                        "wetlevel": -12.0,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 1.0,
+                        "mode": 0.0
+                    },
+                    "preset": ""
+                },
+                "rt_neural_generic": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json": [
+                            "/home/pistomp/.lv2/rt-neural-generic.lv2/models/deer ink studios/tw40_california_clean_deerinkstudios.json",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "ANTIALIASING": 66.21600341796875,
+                        "PREGAIN": 0.0,
+                        "NETBYPASS": 0.0,
+                        "PARAM1": 0.0,
+                        "PARAM2": 0.0,
+                        "EQBYPASS": 0.0,
+                        "EQPOS": 0.0,
+                        "BASS": 0.0,
+                        "BFREQ": 305.0,
+                        "MID": 0.0,
+                        "MFREQ": 750.0,
+                        "MIDQ": 0.7070000171661377,
+                        "MTYPE": 0.0,
+                        "TREBLE": 0.0,
+                        "TFREQ": 2000.0,
+                        "DEPTH": 0.0,
+                        "PRESENCE": 0.0,
+                        "MASTER": 0.0,
+                        "enabled": 1.0
+                    },
+                    "preset": ""
+                },
+                "CABINET": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.0,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 1.0
+                    },
+                    "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": ""
+                },
+                "toob_ml": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "trim": 0.0,
+                        "model": 0.0,
+                        "gain": 3.0,
+                        "master": 0.0,
+                        "bass": 0.5,
+                        "mid": 0.5,
+                        "treble": 0.5,
+                        "sag": 0.0,
+                        "sagd": 0.0,
+                        "sagf": 13.0
+                    },
+                    "preset": ""
+                },
+                "toob_nam": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://two-play.com/plugins/toob-nam#modelFile": [
+                            "",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "inputGain": 0.0,
+                        "outputGain": 0.0,
+                        "gate": -80.0,
+                        "bass": 5.0,
+                        "mid": 5.0,
+                        "treble": 5.0,
+                        "toneStack": 0.0
+                    },
+                    "preset": ""
+                },
+                "toob_convolution_reverb": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://two-play.com/plugins/toob-impulse#impulseFile": [
+                            "",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "time": 1.5,
+                        "direct_mix": -40.0,
+                        "reverb_mix": -10.0,
+                        "predelay": 1.0
+                    },
+                    "preset": ""
+                }
+            }
+        },
+        {
+            "name": "MagnaTS9",
+            "data": {
+                "CABINET": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.0,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 1.0
+                    },
+                    "preset": ""
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/Tim R Magnatone Super 59 MKii - TS9 On Full.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": ""
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 2059.15185546875,
+                        "drylevel": -4.0,
+                        "wetlevel": -24.645668029785156,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 1.0,
+                        "mode": 18.0
+                    },
+                    "preset": ""
+                },
+                "rt_neural_generic": {
+                    "bypassed": true,
+                    "parameters": {
+                        "http://aidadsp.cc/plugins/aidadsp-bundle/rt-neural-generic#json": [
+                            "/home/pistomp/.lv2/rt-neural-generic.lv2/models/deer ink studios/tw40_california_clean_deerinkstudios.json",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "ANTIALIASING": 66.21600341796875,
+                        "PREGAIN": 0.0,
+                        "NETBYPASS": 0.0,
+                        "PARAM1": 0.0,
+                        "PARAM2": 0.0,
+                        "EQBYPASS": 0.0,
+                        "EQPOS": 0.0,
+                        "BASS": 0.0,
+                        "BFREQ": 305.0,
+                        "MID": 0.0,
+                        "MFREQ": 750.0,
+                        "MIDQ": 0.7070000171661377,
+                        "MTYPE": 0.0,
+                        "TREBLE": 0.0,
+                        "TFREQ": 2000.0,
+                        "DEPTH": 0.0,
+                        "PRESENCE": 0.0,
+                        "MASTER": 0.0,
+                        "enabled": 0.0
+                    },
+                    "preset": ""
+                },
+                "toob_ml": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "trim": 0.0,
+                        "model": 0.0,
+                        "gain": 3.0,
+                        "master": 0.0,
+                        "bass": 0.5,
+                        "mid": 0.5,
+                        "treble": 0.5,
+                        "sag": 0.0,
+                        "sagd": 0.0,
+                        "sagf": 13.0
+                    },
+                    "preset": ""
+                },
+                "toob_nam": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://two-play.com/plugins/toob-nam#modelFile": [
+                            "",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "inputGain": 0.0,
+                        "outputGain": 0.0,
+                        "gate": -80.0,
+                        "bass": 5.0,
+                        "mid": 5.0,
+                        "treble": 5.0,
+                        "toneStack": 0.0
+                    },
+                    "preset": ""
+                },
+                "toob_convolution_reverb": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://two-play.com/plugins/toob-impulse#impulseFile": [
+                            "",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "time": 1.5,
+                        "direct_mix": -40.0,
+                        "reverb_mix": -10.0,
+                        "predelay": 1.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}
