@@ -1,0 +1,150 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "tamgamp": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "enable": 1.0,
+                        "preamp": 2.0,
+                        "pregain": 0.0,
+                        "gain": 93.42578125,
+                        "bass": 42.46651785714287,
+                        "middle": 45.36830357142858,
+                        "treble": 57.53348214285716,
+                        "out_gain": -8.450892857142854
+                    },
+                    "preset": ""
+                },
+                "mono": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 1.0
+                    },
+                    "preset": ""
+                },
+                "doubler": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "TimeTracking": 0.5033482142857145,
+                        "PitchTracking": 0.5,
+                        "DryLevelDb": -0.5022321428569683,
+                        "DryLeftPosition": 0.0,
+                        "DryRightPosition": 1.0,
+                        "WetLevelDb": 0.0,
+                        "WetLeftPosition": 0.0,
+                        "WetRightPosition": 1.0
+                    },
+                    "preset": ""
+                },
+                "modulay": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 49.47544642857142,
+                        "mix": 18.749999999999993,
+                        "rate": 1.26379276409557,
+                        "depth": 0.21203981916315473,
+                        "time": 424.1406250000001,
+                        "morph": 50.0,
+                        "tone": 3000.0
+                    },
+                    "preset": ""
+                },
+                "TalReverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "unused": 0.0,
+                        "dry": 0.8399999737739563,
+                        "wet": 0.299107142857143,
+                        "room_size": 0.5360000133514404,
+                        "pre_delay": 0.0,
+                        "high_cut": 0.8158482142857142,
+                        "low_cut": 0.171875,
+                        "damp": 0.0,
+                        "stereo": 0.0
+                    },
+                    "preset": "urn:juce:TalReverb#preset006"
+                },
+                "_sd2lead_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "DRIVE": 0.8415178571428568,
+                        "LEVEL": -13.410714285714286,
+                        "TONE": 377.23214285714295
+                    },
+                    "preset": ""
+                },
+                "_saturate_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "INTENSITY": 6.0,
+                        "SATURATE": 60.0
+                    },
+                    "preset": ""
+                },
+                "DS1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Tone": 0.343323591344932,
+                        "Level": 0.1983287172468516,
+                        "Dist": 0.26635061913327746
+                    },
+                    "preset": ""
+                },
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.5,
+                        "GATE": -50.50781250000001,
+                        "ATTACK": 3.0,
+                        "DRIVE": 0.3119419642857142,
+                        "LEVEL": -12.808035714285712
+                    },
+                    "preset": ""
+                },
+                "Eq10": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": 0.0,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": 0.0,
+                        "band4khz": 0.0,
+                        "band8khz": 0.0,
+                        "band16khz": 0.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}
