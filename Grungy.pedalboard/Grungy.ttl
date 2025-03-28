@@ -886,7 +886,7 @@ _:b14
         lv2:OutputPort .
 
 <midi_separated_mode>
-    ingen:value 0 ;
+    ingen:value 1 ;
     lv2:index 11 ;
     a atom:AtomPort ,
         lv2:InputPort .
