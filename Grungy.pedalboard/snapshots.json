@@ -1,0 +1,517 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "CABINET": {
+                    "bypassed": true,
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 0.0
+                    },
+                    "preset": ""
+                },
+                "GUITARIX": {
+                    "bypassed": false,
+                    "ports": {
+                        "MasterGain": -15.267857142857142,
+                        "PreGain": 9.955357142857146,
+                        "Distortion": 99.6685267857143,
+                        "Drive": 0.48069196416846743,
+                        "Middle": 0.5625,
+                        "Bass": 0.390625,
+                        "Treble": 0.6584821428571429,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 9.0,
+                        "c_model": 0.0
+                    },
+                    "preset": ""
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "ports": {
+                        "open": -19.88839285714286,
+                        "attack": 0.05580357142857143,
+                        "close": -51.42857142857143,
+                        "mains": 60.0
+                    },
+                    "preset": ""
+                },
+                "_DOP250_": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.5915178571428571,
+                        "LEVEL": 0.47098214285714285
+                    },
+                    "preset": ""
+                },
+                "BigMuffPi": {
+                    "bypassed": true,
+                    "ports": {
+                        "Tone": 0.5915178571428572,
+                        "Level": 0.17745535714285715,
+                        "Sustain": 0.31584821428571425
+                    },
+                    "preset": ""
+                },
+                "chor": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "WETDRY": 78.0,
+                        "PAN": 0.0,
+                        "TEMPO": 33.0,
+                        "RND": 0.0,
+                        "TYPE": 0.0,
+                        "WIDTH": 24.0,
+                        "DEPTH": 40.0,
+                        "DELAY": 85.0,
+                        "FB": 64.0,
+                        "LRCR": 118.0,
+                        "SUB": 0.0,
+                        "INTENSE": 0.0
+                    },
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1"
+                },
+                "echo": {
+                    "bypassed": true,
+                    "ports": {
+                        "ldelay": 62.5,
+                        "lfeedback": 50.0,
+                        "rhaasdelay": 300.0,
+                        "rhaasfeedback": 50.0,
+                        "lecholevel": -19.82142857142857,
+                        "recholevel": -15.714285714285722,
+                        "dryLevel": -1.0714285714285694,
+                        "crossmode": 1.0,
+                        "haaseffect": 1.0,
+                        "swapoutputs": 0.0
+                    },
+                    "preset": ""
+                },
+                "mono_1": {
+                    "bypassed": false,
+                    "ports": {
+                        "gain": -7.678571428571425,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "ports": {
+                        "decay": 2109.3749999999995,
+                        "drylevel": -5.446428571428569,
+                        "wetlevel": -9.821428571428548,
+                        "combs_en": 0.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 16.0
+                    },
+                    "preset": ""
+                },
+                "wah": {
+                    "bypassed": true,
+                    "ports": {
+                        "fslider1_": 0.88189,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.6961495535028266
+                    },
+                    "preset": ""
+                }
+            }
+        },
+        {
+            "name": "Alice",
+            "data": {
+                "CABINET": {
+                    "bypassed": true,
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 0.0
+                    },
+                    "preset": ""
+                },
+                "GUITARIX": {
+                    "bypassed": false,
+                    "ports": {
+                        "MasterGain": -15.401785714285714,
+                        "PreGain": 9.955357142857146,
+                        "Distortion": 99.6685267857143,
+                        "Drive": 0.48069196416846743,
+                        "Middle": 0.5625,
+                        "Bass": 0.390625,
+                        "Treble": 0.6584821428571429,
+                        "Cabinet": 12.684151785714292,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 9.0,
+                        "c_model": 18.0
+                    },
+                    "preset": ""
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "ports": {
+                        "open": -18.415178571428577,
+                        "attack": 0.05580357142857143,
+                        "close": -49.55357142857143,
+                        "mains": 60.0
+                    },
+                    "preset": ""
+                },
+                "_DOP250_": {
+                    "bypassed": true,
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.5859375000000001,
+                        "LEVEL": 0.47098214285714285
+                    },
+                    "preset": ""
+                },
+                "BigMuffPi": {
+                    "bypassed": false,
+                    "ports": {
+                        "Tone": 0.6216517857142858,
+                        "Level": 0.1640625,
+                        "Sustain": 0.25
+                    },
+                    "preset": ""
+                },
+                "chor": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "WETDRY": 78.0,
+                        "PAN": 0.0,
+                        "TEMPO": 33.0,
+                        "RND": 0.0,
+                        "TYPE": 0.0,
+                        "WIDTH": 24.0,
+                        "DEPTH": 40.0,
+                        "DELAY": 85.0,
+                        "FB": 64.0,
+                        "LRCR": 118.0,
+                        "SUB": 0.0,
+                        "INTENSE": 0.0
+                    },
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1"
+                },
+                "echo": {
+                    "bypassed": false,
+                    "ports": {
+                        "ldelay": 62.5,
+                        "lfeedback": 50.0,
+                        "rhaasdelay": 300.0,
+                        "rhaasfeedback": 50.0,
+                        "lecholevel": -19.82142857142857,
+                        "recholevel": -15.714285714285722,
+                        "dryLevel": -1.0714285714285694,
+                        "crossmode": 1.0,
+                        "haaseffect": 1.0,
+                        "swapoutputs": 0.0
+                    },
+                    "preset": ""
+                },
+                "mono_1": {
+                    "bypassed": false,
+                    "ports": {
+                        "gain": -7.678571428571425,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "ports": {
+                        "decay": 2109.3749999999995,
+                        "drylevel": -5.446428571428569,
+                        "wetlevel": -9.821428571428548,
+                        "combs_en": 0.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 16.0
+                    },
+                    "preset": ""
+                },
+                "wah": {
+                    "bypassed": true,
+                    "ports": {
+                        "fslider1_": 0.0,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.7016741070755029
+                    },
+                    "preset": ""
+                }
+            }
+        },
+        {
+            "name": "STP",
+            "data": {
+                "BigMuffPi": {
+                    "bypassed": true,
+                    "ports": {
+                        "Tone": 0.5915178571428572,
+                        "Level": 0.17745535714285715,
+                        "Sustain": 0.31584821428571425
+                    },
+                    "preset": ""
+                },
+                "CABINET": {
+                    "bypassed": true,
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 0.0
+                    },
+                    "preset": ""
+                },
+                "GUITARIX": {
+                    "bypassed": false,
+                    "ports": {
+                        "MasterGain": -12.142857142857142,
+                        "PreGain": 9.955357142857146,
+                        "Distortion": 99.6685267857143,
+                        "Drive": 0.48069196416846743,
+                        "Middle": 0.5625,
+                        "Bass": 0.390625,
+                        "Treble": 0.6584821428571429,
+                        "Cabinet": 12.684151785714292,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 11.0,
+                        "c_model": 18.0
+                    },
+                    "preset": ""
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "ports": {
+                        "open": -19.581473214285722,
+                        "attack": 0.05580357142857143,
+                        "close": -47.05357142857143,
+                        "mains": 60.0
+                    },
+                    "preset": ""
+                },
+                "_DOP250_": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.5859375000000001,
+                        "LEVEL": 0.6004464285714287
+                    },
+                    "preset": ""
+                },
+                "chor": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "WETDRY": 64.0,
+                        "PAN": 0.0,
+                        "TEMPO": 19.0,
+                        "RND": 0.0,
+                        "TYPE": 0.0,
+                        "WIDTH": -40.0,
+                        "DEPTH": 56.0,
+                        "DELAY": 90.0,
+                        "FB": 64.0,
+                        "LRCR": 19.0,
+                        "SUB": 0.0,
+                        "INTENSE": 1.0
+                    },
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_2"
+                },
+                "echo": {
+                    "bypassed": false,
+                    "ports": {
+                        "ldelay": 33.48214285714286,
+                        "lfeedback": 35.15625000000001,
+                        "rhaasdelay": 223.21428571428572,
+                        "rhaasfeedback": 50.0,
+                        "lecholevel": -22.67857142857143,
+                        "recholevel": -22.05357142857143,
+                        "dryLevel": -1.0714285714285694,
+                        "crossmode": 1.0,
+                        "haaseffect": 1.0,
+                        "swapoutputs": 0.0
+                    },
+                    "preset": ""
+                },
+                "mono_1": {
+                    "bypassed": false,
+                    "ports": {
+                        "gain": -7.678571428571425,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "ports": {
+                        "decay": 2109.3749999999995,
+                        "drylevel": -5.446428571428569,
+                        "wetlevel": -9.821428571428548,
+                        "combs_en": 0.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 16.0
+                    },
+                    "preset": ""
+                },
+                "wah": {
+                    "bypassed": true,
+                    "ports": {
+                        "fslider1_": 0.002232142857142857,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.6961495535028264
+                    },
+                    "preset": ""
+                }
+            }
+        },
+        {
+            "name": "PJ",
+            "data": {
+                "BigMuffPi": {
+                    "bypassed": true,
+                    "ports": {
+                        "Tone": 0.5915178571428572,
+                        "Level": 0.17745535714285715,
+                        "Sustain": 0.31584821428571425
+                    },
+                    "preset": ""
+                },
+                "CABINET": {
+                    "bypassed": true,
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 0.0
+                    },
+                    "preset": ""
+                },
+                "GUITARIX": {
+                    "bypassed": false,
+                    "ports": {
+                        "MasterGain": -16.026785714285715,
+                        "PreGain": 9.955357142857146,
+                        "Distortion": 99.6685267857143,
+                        "Drive": 0.48069196416846743,
+                        "Middle": 0.5625,
+                        "Bass": 0.49553571428571425,
+                        "Treble": 0.6584821428571429,
+                        "Cabinet": 12.684151785714292,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 4.0,
+                        "c_model": 18.0
+                    },
+                    "preset": ""
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "ports": {
+                        "open": -19.704241071428577,
+                        "attack": 0.05580357142857143,
+                        "close": -47.5,
+                        "mains": 60.0
+                    },
+                    "preset": ""
+                },
+                "_DOP250_": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.49553571428571425,
+                        "LEVEL": 0.6004464285714287
+                    },
+                    "preset": ""
+                },
+                "chor": {
+                    "bypassed": false,
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "WETDRY": 72.0,
+                        "PAN": 0.0,
+                        "TEMPO": 33.0,
+                        "RND": 0.0,
+                        "TYPE": 0.0,
+                        "WIDTH": 24.0,
+                        "DEPTH": 40.0,
+                        "DELAY": 85.0,
+                        "FB": 64.0,
+                        "LRCR": 118.0,
+                        "SUB": 0.0,
+                        "INTENSE": 0.0
+                    },
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1"
+                },
+                "echo": {
+                    "bypassed": true,
+                    "ports": {
+                        "ldelay": 33.48214285714286,
+                        "lfeedback": 35.15625000000001,
+                        "rhaasdelay": 223.21428571428572,
+                        "rhaasfeedback": 50.0,
+                        "lecholevel": -22.67857142857143,
+                        "recholevel": -22.05357142857143,
+                        "dryLevel": -1.0714285714285694,
+                        "crossmode": 1.0,
+                        "haaseffect": 1.0,
+                        "swapoutputs": 0.0
+                    },
+                    "preset": ""
+                },
+                "mono_1": {
+                    "bypassed": false,
+                    "ports": {
+                        "gain": -7.678571428571425,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "ports": {
+                        "decay": 2109.3749999999995,
+                        "drylevel": -5.446428571428569,
+                        "wetlevel": -9.821428571428548,
+                        "combs_en": 0.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 16.0
+                    },
+                    "preset": ""
+                },
+                "wah": {
+                    "bypassed": true,
+                    "ports": {
+                        "fslider1_": 0.96063,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.6994642856464323
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}
