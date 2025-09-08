@@ -1,0 +1,195 @@
+{
+    "current": 1,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "BigMuffPi": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "Tone": 0.21899999678134918,
+                        "Level": 0.1372767857142858,
+                        "Sustain": 0.9095982142857142
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Drop": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Step": -12.0,
+                        "Gain": -1.4732142857142918,
+                        "Fidelity": 2.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "MVerb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "damping": 50.0,
+                        "density": 50.0,
+                        "bandwidth": 50.0,
+                        "decay": 56.25,
+                        "predelay": 50.0,
+                        "size": 75.0,
+                        "gain": 100.0,
+                        "mix": 17.41071319580078,
+                        "earlymix": 50.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "open": -27.561383928571427,
+                        "attack": 0.06696428571428573,
+                        "close": -44.10714285714286,
+                        "mains": 60.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "mono": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -3.0803571428571423,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "tubewarmth": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "drive": 5.0,
+                        "blend": 10.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "DS1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Tone": 0.28912793448894947,
+                        "Level": 0.5,
+                        "Dist": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        },
+        {
+            "name": "Muffed",
+            "data": {
+                "BigMuffPi": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Tone": 0.21899999678134918,
+                        "Level": 0.12165178571428581,
+                        "Sustain": 0.9095982142857142
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Drop": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Step": -12.0,
+                        "Gain": 12.1875,
+                        "Fidelity": 2.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "MVerb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "damping": 50.0,
+                        "density": 50.0,
+                        "bandwidth": 50.0,
+                        "decay": 56.25,
+                        "predelay": 50.0,
+                        "size": 75.0,
+                        "gain": 100.0,
+                        "mix": 17.41071319580078,
+                        "earlymix": 50.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "open": -17.86272321428568,
+                        "attack": 0.05580357142857144,
+                        "close": -40.000000000000014,
+                        "mains": 60.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "mono": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -3.0803571428571423,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "tubewarmth": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "drive": 5.0,
+                        "blend": 10.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "DS1": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "Tone": 0.28912793448894947,
+                        "Level": 0.5,
+                        "Dist": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        }
+    ]
+}
