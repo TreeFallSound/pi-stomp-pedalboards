@@ -148,6 +148,21 @@
                         "enabled": 1.0
                     },
                     "preset": ""
+                },
+                "notes": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": ""
                 }
             }
         }
