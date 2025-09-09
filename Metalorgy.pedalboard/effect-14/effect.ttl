@@ -10,6 +10,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
 	state:state [
-		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Mark%20IIC+%20Tight%20Rhythm.nam>
+		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Mesa%20Mark%20IIC+%20Tight%20Rhythm.nam>
 	] .
 

@@ -8,52 +8,52 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <neural_amp_modeler_lv2/output> ;
-    ingen:head <CabinetLoader/lv2_audio_in> .
-
-_:b2
-    ingen:tail <CabinetLoader/lv2_audio_out> ;
-    ingen:head <Eq10/in> .
-
-_:b3
-    ingen:tail <capture_1> ;
-    ingen:head <CollisionDrive/in> .
-
-_:b4
-    ingen:tail <doubler/Output_R> ;
-    ingen:head <playback_2> .
-
-_:b5
-    ingen:tail <Eq10/out> ;
-    ingen:head <modulay/lv2_audio_in_1> .
-
-_:b6
-    ingen:tail <modulay/lv2_audio_out_1> ;
-    ingen:head <TalReverb/lv2_audio_in_1> .
-
-_:b7
     ingen:tail <doubler/Output_L> ;
     ingen:head <playback_1> .
 
-_:b8
+_:b2
+    ingen:tail <doubler/Output_R> ;
+    ingen:head <playback_2> .
+
+_:b3
     ingen:tail <TalReverb/lv2_audio_out_2> ;
     ingen:head <doubler/Input_R> .
 
-_:b9
+_:b4
     ingen:tail <audiofile/lv2_audio_out_1> ;
     ingen:head <CollisionDrive/in> .
 
-_:b10
+_:b5
+    ingen:tail <modulay/lv2_audio_out_1> ;
+    ingen:head <TalReverb/lv2_audio_in_1> .
+
+_:b6
+    ingen:tail <neural_amp_modeler_lv2/output> ;
+    ingen:head <CabinetLoader/lv2_audio_in> .
+
+_:b7
     ingen:tail <modulay/lv2_audio_out_1> ;
     ingen:head <TalReverb/lv2_audio_in_2> .
 
-_:b11
+_:b8
+    ingen:tail <CollisionDrive/out> ;
+    ingen:head <neural_amp_modeler_lv2/input> .
+
+_:b9
     ingen:tail <TalReverb/lv2_audio_out_1> ;
     ingen:head <doubler/Input_L> .
 
+_:b10
+    ingen:tail <Eq10/out> ;
+    ingen:head <modulay/lv2_audio_in_1> .
+
+_:b11
+    ingen:tail <capture_1> ;
+    ingen:head <CollisionDrive/in> .
+
 _:b12
-    ingen:tail <CollisionDrive/out> ;
-    ingen:head <neural_amp_modeler_lv2/input> .
+    ingen:tail <CabinetLoader/lv2_audio_out> ;
+    ingen:head <Eq10/in> .
 
 <CabinetLoader>
     ingen:canvasX 1686.0 ;
@@ -941,7 +941,7 @@ _:b12
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 29 ;
+    pedal:version 30 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
