@@ -1,0 +1,79 @@
+{
+    "current": 0,
+    "snapshots": [
+        {
+            "name": "Default",
+            "data": {
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/Marshal/01a Marshall JCM800 2203x BD-2 P8B3M6T7M1G4.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": ""
+                },
+                "reverb_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 2800.0,
+                        "drylevel": -4.0,
+                        "wetlevel": -23.3482142857143,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 1.0,
+                        "mode": 27.0
+                    },
+                    "preset": ""
+                },
+                "CabinetLoader": {
+                    "bypassed": false,
+                    "parameters": {
+                        "https://mod.audio/plugins/CabinetLoader#irfile": [
+                            "/home/pistomp/data/user-files/Speaker Cabinets IRs/412 MESA TRAD V30 57-121.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "level": -12.0,
+                        "lv2_enabled": 1.0
+                    },
+                    "preset": ""
+                },
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.5,
+                        "GATE": -43.914620535714235,
+                        "ATTACK": 2.0,
+                        "DRIVE": 0.07645089285714285,
+                        "LEVEL": -10.0
+                    },
+                    "preset": ""
+                }
+            }
+        }
+    ]
+}
