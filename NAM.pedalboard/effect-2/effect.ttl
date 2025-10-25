@@ -8,8 +8,5 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
-	state:state [
-		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <George%20B%20Ceriatone%20King%20Kong%20%20KK%20Ch2%2060s%20solo%2080s.nam>
-	] .
+	lv2:appliesTo <http://github.com/mikeoliphant/neural-amp-modeler-lv2> .
 

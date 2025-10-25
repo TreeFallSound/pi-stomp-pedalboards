@@ -8,76 +8,87 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <reverb_1/outputr> ;
-    ingen:head <stereo/inR> .
+    ingen:tail <capture_1> ;
+    ingen:head <CollisionDrive/in> .
 
 _:b2
     ingen:tail <neural_amp_modeler_lv2/output> ;
     ingen:head <CabinetLoader/lv2_audio_in> .
 
 _:b3
-    ingen:tail <reverb_1/outputl> ;
-    ingen:head <stereo/inL> .
-
-_:b4
-    ingen:tail <CollisionDrive/out> ;
-    ingen:head <neural_amp_modeler_lv2/input> .
-
-_:b5
     ingen:tail <stereo/outL> ;
     ingen:head <playback_1> .
 
-_:b6
-    ingen:tail <stereo/outR> ;
-    ingen:head <playback_2> .
+_:b4
+    ingen:tail <reverb_1/outputl> ;
+    ingen:head <stereo/inL> .
 
-_:b7
-    ingen:tail <capture_1> ;
-    ingen:head <CollisionDrive/in> .
-
-_:b8
+_:b5
     ingen:tail <CabinetLoader/lv2_audio_out> ;
     ingen:head <reverb_1/inputl> .
 
-<CabinetLoader>
-    ingen:canvasX 1306.0 ;
-    ingen:canvasY 83.0 ;
+_:b6
+    ingen:tail <CollisionDrive/out> ;
+    ingen:head <neural_amp_modeler_lv2/input> .
+
+_:b7
+    ingen:tail <stereo/outR> ;
+    ingen:head <playback_2> .
+
+_:b8
+    ingen:tail <reverb_1/outputr> ;
+    ingen:head <stereo/inR> .
+
+<neural_amp_modeler_lv2>
+    ingen:canvasX 580.0 ;
+    ingen:canvasY 102.0 ;
     ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
-    lv2:minorVersion 2 ;
+    lv2:minorVersion 1 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <CabinetLoader/lv2_audio_in> ,
-             <CabinetLoader/lv2_audio_out> ,
-             <CabinetLoader/level> ,
-             <CabinetLoader/lv2_enabled> ,
-             <CabinetLoader/:bypass> ;
-    lv2:prototype <https://mod.audio/plugins/CabinetLoader> ;
-    pedal:instanceNumber 8 ;
+    lv2:port <neural_amp_modeler_lv2/input> ,
+             <neural_amp_modeler_lv2/output> ,
+             <neural_amp_modeler_lv2/input_level> ,
+             <neural_amp_modeler_lv2/output_level> ,
+             <neural_amp_modeler_lv2/buffered> ,
+             <neural_amp_modeler_lv2/:bypass> ;
+    lv2:prototype <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
+    pedal:instanceNumber 2 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<CabinetLoader/lv2_audio_in>
+<neural_amp_modeler_lv2/input>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<CabinetLoader/lv2_audio_in>
+<neural_amp_modeler_lv2/input>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<CabinetLoader/level>
-    ingen:value -12.000000 ;
+<neural_amp_modeler_lv2/input_level>
+    ingen:value -0.379464 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<CabinetLoader/lv2_enabled>
+<neural_amp_modeler_lv2/output_level>
+    ingen:value 1.569161 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<neural_amp_modeler_lv2/buffered>
     ingen:value 0.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<CabinetLoader/:bypass>
+<neural_amp_modeler_lv2/:bypass>
     ingen:value 1 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 61 ;
+        a midi:Controller ;
+    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
@@ -169,6 +180,48 @@ _:b8
     a lv2:ControlPort ,
         lv2:InputPort .
 
+<CabinetLoader>
+    ingen:canvasX 1306.0 ;
+    ingen:canvasY 83.0 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 2 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <CabinetLoader/lv2_audio_in> ,
+             <CabinetLoader/lv2_audio_out> ,
+             <CabinetLoader/level> ,
+             <CabinetLoader/lv2_enabled> ,
+             <CabinetLoader/:bypass> ;
+    lv2:prototype <https://mod.audio/plugins/CabinetLoader> ;
+    pedal:instanceNumber 8 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<CabinetLoader/lv2_audio_in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<CabinetLoader/lv2_audio_in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<CabinetLoader/level>
+    ingen:value -12.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CabinetLoader/lv2_enabled>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CabinetLoader/:bypass>
+    ingen:value 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
 <CollisionDrive>
     ingen:canvasX 265.0 ;
     ingen:canvasY 431.0 ;
@@ -236,54 +289,6 @@ _:b8
         lv2:OutputPort .
 
 <CollisionDrive/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<neural_amp_modeler_lv2>
-    ingen:canvasX 580.0 ;
-    ingen:canvasY 102.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 1 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <neural_amp_modeler_lv2/input> ,
-             <neural_amp_modeler_lv2/output> ,
-             <neural_amp_modeler_lv2/input_level> ,
-             <neural_amp_modeler_lv2/output_level> ,
-             <neural_amp_modeler_lv2/buffered> ,
-             <neural_amp_modeler_lv2/:bypass> ;
-    lv2:prototype <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
-    pedal:instanceNumber 2 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<neural_amp_modeler_lv2/input>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<neural_amp_modeler_lv2/input>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<neural_amp_modeler_lv2/input_level>
-    ingen:value -0.379464 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<neural_amp_modeler_lv2/output_level>
-    ingen:value 1.569161 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<neural_amp_modeler_lv2/buffered>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<neural_amp_modeler_lv2/:bypass>
     ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
@@ -444,7 +449,7 @@ _:b8
         lv2:OutputPort .
 
 <midi_separated_mode>
-    ingen:value 0 ;
+    ingen:value 1 ;
     lv2:index 11 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -459,12 +464,12 @@ _:b8
     doap:name "NAM" ;
     pedal:unitName "Unknown" ;
     pedal:unitModel "None" ;
-    pedal:width 2458 ;
-    pedal:height 2312 ;
+    pedal:width 2496 ;
+    pedal:height 2308 ;
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 6 ;
+    pedal:version 7 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -474,10 +479,10 @@ _:b8
               _:b6 ,
               _:b7 ,
               _:b8 ;
-    ingen:block <CabinetLoader> ,
+    ingen:block <neural_amp_modeler_lv2> ,
                 <reverb_1> ,
+                <CabinetLoader> ,
                 <CollisionDrive> ,
-                <neural_amp_modeler_lv2> ,
                 <stereo> ;
     lv2:port <:bpb> ,
              <:bpm> ,
