@@ -8,40 +8,439 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <eq/Output> ;
-    ingen:head <stereo/inL> .
-
-_:b2
-    ingen:tail <chor/OUTPUT_L> ;
-    ingen:head <eq/Input> .
-
-_:b3
-    ingen:tail <stereo/outL> ;
-    ingen:head <playback_1> .
-
-_:b4
-    ingen:tail <_bottlerocket_/out> ;
-    ingen:head <AmpVTS/in> .
-
-_:b5
-    ingen:tail <Noisegate/out> ;
-    ingen:head <chor/INPUT_L> .
-
-_:b6
-    ingen:tail <AmpVTS/out> ;
-    ingen:head <CABINET/in> .
-
-_:b7
-    ingen:tail <CABINET/out> ;
-    ingen:head <Noisegate/in> .
-
-_:b8
     ingen:tail <StompBox_fuzz/OUTPUT_L> ;
     ingen:head <_bottlerocket_/in> .
 
-_:b9
+_:b2
     ingen:tail <capture_1> ;
     ingen:head <StompBox_fuzz/INPUT_L> .
+
+_:b3
+    ingen:tail <CABINET/out> ;
+    ingen:head <Noisegate/in> .
+
+_:b4
+    ingen:tail <chor/OUTPUT_L> ;
+    ingen:head <eq/Input> .
+
+_:b5
+    ingen:tail <eq/Output> ;
+    ingen:head <stereo/inL> .
+
+_:b6
+    ingen:tail <stereo/outL> ;
+    ingen:head <playback_1> .
+
+_:b7
+    ingen:tail <_bottlerocket_/out> ;
+    ingen:head <AmpVTS/in> .
+
+_:b8
+    ingen:tail <AmpVTS/out> ;
+    ingen:head <CABINET/in> .
+
+_:b9
+    ingen:tail <Noisegate/out> ;
+    ingen:head <chor/INPUT_L> .
+
+_:b10
+    ingen:tail <chor/OUTPUT_R> ;
+    ingen:head <stereo/inR> .
+
+_:b11
+    ingen:tail <stereo/outR> ;
+    ingen:head <playback_2> .
+
+<_bottlerocket_>
+    ingen:canvasX 600.2 ;
+    ingen:canvasY 100.1 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 34 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <_bottlerocket_/in> ,
+             <_bottlerocket_/out> ,
+             <_bottlerocket_/BYPASS> ,
+             <_bottlerocket_/BASS> ,
+             <_bottlerocket_/GAIN> ,
+             <_bottlerocket_/TREBLE> ,
+             <_bottlerocket_/VOLUME> ,
+             <_bottlerocket_/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_bottlerocket_#_bottlerocket_> ;
+    pedal:instanceNumber 3 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<_bottlerocket_/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<_bottlerocket_/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<_bottlerocket_/BYPASS>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_bottlerocket_/BASS>
+    ingen:value 1.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_bottlerocket_/GAIN>
+    ingen:value 0.898438 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 70 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 1.000000 ;
+        a midi:Controller ;
+    ] ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_bottlerocket_/TREBLE>
+    ingen:value 0.218750 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_bottlerocket_/VOLUME>
+    ingen:value 0.070312 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<_bottlerocket_/:bypass>
+    ingen:value 1 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate>
+    ingen:canvasX 1969.0 ;
+    ingen:canvasY 804.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 24 ;
+    lv2:minorVersion 9 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <Noisegate/in> ,
+             <Noisegate/out> ,
+             <Noisegate/open> ,
+             <Noisegate/attack> ,
+             <Noisegate/close> ,
+             <Noisegate/mains> ,
+             <Noisegate/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/caps/Noisegate> ;
+    pedal:instanceNumber 5 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<Noisegate/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<Noisegate/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<Noisegate/open>
+    ingen:value -30.691963 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/attack>
+    ingen:value 0.340402 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/close>
+    ingen:value -50.267857 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/mains>
+    ingen:value 50.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET>
+    ingen:canvasX 1265.0 ;
+    ingen:canvasY 901.0 ;
+    ingen:enabled true ;
+    ingen:polyphonic false ;
+    lv2:microVersion 3 ;
+    lv2:minorVersion 28 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <CABINET/in> ,
+             <CABINET/out> ,
+             <CABINET/CLevel> ,
+             <CABINET/CBass> ,
+             <CABINET/CTreble> ,
+             <CABINET/c_model> ,
+             <CABINET/SCHEDULE> ,
+             <CABINET/:bypass> ;
+    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_cabinet#CABINET> ;
+    pedal:instanceNumber 7 ;
+    pedal:preset <> ;
+    a ingen:Block .
+
+<CABINET/in>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<CABINET/in>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<CABINET/CLevel>
+    ingen:value 2.810268 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/CBass>
+    ingen:value 0.066964 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/CTreble>
+    ingen:value 4.642857 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/c_model>
+    ingen:value 12.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<CABINET/SCHEDULE>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<CABINET/:bypass>
+    ingen:value 0 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz>
+    ingen:canvasX 212.0 ;
+    ingen:canvasY 98.0 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <StompBox_fuzz/INPUT_L> ,
+             <StompBox_fuzz/INPUT_R> ,
+             <StompBox_fuzz/OUTPUT_L> ,
+             <StompBox_fuzz/OUTPUT_R> ,
+             <StompBox_fuzz/BYPASS> ,
+             <StompBox_fuzz/LEVEL> ,
+             <StompBox_fuzz/HI> ,
+             <StompBox_fuzz/MID> ,
+             <StompBox_fuzz/LO> ,
+             <StompBox_fuzz/GAIN> ,
+             <StompBox_fuzz/:bypass> ;
+    lv2:prototype <http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz> ;
+    pedal:instanceNumber 6 ;
+    pedal:preset <http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz:preset:classic_fuzz> ;
+    a ingen:Block .
+
+<StompBox_fuzz/INPUT_L>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/INPUT_R>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/INPUT_L>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<StompBox_fuzz/INPUT_R>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<StompBox_fuzz/BYPASS>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/LEVEL>
+    ingen:value 6.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/HI>
+    ingen:value -12.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/MID>
+    ingen:value 2.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/LO>
+    ingen:value 10.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/GAIN>
+    ingen:value 40.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<StompBox_fuzz/:bypass>
+    ingen:value 1 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 60 ;
+        a midi:Controller ;
+    ] ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor>
+    ingen:canvasX 1116.0 ;
+    ingen:canvasY 254.0 ;
+    ingen:enabled false ;
+    ingen:polyphonic false ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 0 ;
+    mod:builderVersion 0 ;
+    mod:releaseNumber 0 ;
+    lv2:port <chor/INPUT_L> ,
+             <chor/INPUT_R> ,
+             <chor/OUTPUT_L> ,
+             <chor/OUTPUT_R> ,
+             <chor/BYPASS> ,
+             <chor/WETDRY> ,
+             <chor/PAN> ,
+             <chor/TEMPO> ,
+             <chor/RND> ,
+             <chor/TYPE> ,
+             <chor/WIDTH> ,
+             <chor/DEPTH> ,
+             <chor/DELAY> ,
+             <chor/FB> ,
+             <chor/LRCR> ,
+             <chor/SUB> ,
+             <chor/INTENSE> ,
+             <chor/:bypass> ;
+    lv2:prototype <http://rakarrack.sourceforge.net/effects.html#chor> ;
+    pedal:instanceNumber 4 ;
+    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1> ;
+    a ingen:Block .
+
+<chor/INPUT_L>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<chor/INPUT_R>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<chor/INPUT_L>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<chor/INPUT_R>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<chor/BYPASS>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/WETDRY>
+    ingen:value 80.000000 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 71 ;
+        lv2:minimum 0.000000 ;
+        lv2:maximum 127.000000 ;
+        a midi:Controller ;
+    ] ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/PAN>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/TEMPO>
+    ingen:value 39.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/RND>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/TYPE>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/WIDTH>
+    ingen:value -4.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/DEPTH>
+    ingen:value 23.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/DELAY>
+    ingen:value 3.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/FB>
+    ingen:value 62.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/LRCR>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/SUB>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/INTENSE>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<chor/:bypass>
+    ingen:value 1 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 62 ;
+        a midi:Controller ;
+    ] ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
 
 <AmpVTS>
     ingen:canvasX 142.0 ;
@@ -333,397 +732,6 @@ _:b9
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<_bottlerocket_>
-    ingen:canvasX 600.2 ;
-    ingen:canvasY 100.1 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 34 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <_bottlerocket_/in> ,
-             <_bottlerocket_/out> ,
-             <_bottlerocket_/BYPASS> ,
-             <_bottlerocket_/BASS> ,
-             <_bottlerocket_/GAIN> ,
-             <_bottlerocket_/TREBLE> ,
-             <_bottlerocket_/VOLUME> ,
-             <_bottlerocket_/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_bottlerocket_#_bottlerocket_> ;
-    pedal:instanceNumber 3 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<_bottlerocket_/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<_bottlerocket_/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<_bottlerocket_/BYPASS>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bottlerocket_/BASS>
-    ingen:value 1.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bottlerocket_/GAIN>
-    ingen:value 0.898438 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 70 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 1.000000 ;
-        a midi:Controller ;
-    ] ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bottlerocket_/TREBLE>
-    ingen:value 0.218750 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bottlerocket_/VOLUME>
-    ingen:value 0.070312 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<_bottlerocket_/:bypass>
-    ingen:value 1 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor>
-    ingen:canvasX 1116.0 ;
-    ingen:canvasY 254.0 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <chor/INPUT_L> ,
-             <chor/INPUT_R> ,
-             <chor/OUTPUT_L> ,
-             <chor/OUTPUT_R> ,
-             <chor/BYPASS> ,
-             <chor/WETDRY> ,
-             <chor/PAN> ,
-             <chor/TEMPO> ,
-             <chor/RND> ,
-             <chor/TYPE> ,
-             <chor/WIDTH> ,
-             <chor/DEPTH> ,
-             <chor/DELAY> ,
-             <chor/FB> ,
-             <chor/LRCR> ,
-             <chor/SUB> ,
-             <chor/INTENSE> ,
-             <chor/:bypass> ;
-    lv2:prototype <http://rakarrack.sourceforge.net/effects.html#chor> ;
-    pedal:instanceNumber 4 ;
-    pedal:preset <http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1> ;
-    a ingen:Block .
-
-<chor/INPUT_L>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<chor/INPUT_R>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<chor/INPUT_L>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<chor/INPUT_R>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<chor/BYPASS>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/WETDRY>
-    ingen:value 80.000000 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 71 ;
-        lv2:minimum 0.000000 ;
-        lv2:maximum 127.000000 ;
-        a midi:Controller ;
-    ] ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/PAN>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/TEMPO>
-    ingen:value 39.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/RND>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/TYPE>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/WIDTH>
-    ingen:value -4.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/DEPTH>
-    ingen:value 23.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/DELAY>
-    ingen:value 3.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/FB>
-    ingen:value 62.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/LRCR>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/SUB>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/INTENSE>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<chor/:bypass>
-    ingen:value 1 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 62 ;
-        a midi:Controller ;
-    ] ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate>
-    ingen:canvasX 1969.0 ;
-    ingen:canvasY 804.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 24 ;
-    lv2:minorVersion 9 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <Noisegate/in> ,
-             <Noisegate/out> ,
-             <Noisegate/open> ,
-             <Noisegate/attack> ,
-             <Noisegate/close> ,
-             <Noisegate/mains> ,
-             <Noisegate/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/caps/Noisegate> ;
-    pedal:instanceNumber 5 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<Noisegate/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<Noisegate/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<Noisegate/open>
-    ingen:value -30.691963 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/attack>
-    ingen:value 0.340402 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/close>
-    ingen:value -50.267857 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/mains>
-    ingen:value 50.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz>
-    ingen:canvasX 212.0 ;
-    ingen:canvasY 98.0 ;
-    ingen:enabled false ;
-    ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 0 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <StompBox_fuzz/INPUT_L> ,
-             <StompBox_fuzz/INPUT_R> ,
-             <StompBox_fuzz/OUTPUT_L> ,
-             <StompBox_fuzz/OUTPUT_R> ,
-             <StompBox_fuzz/BYPASS> ,
-             <StompBox_fuzz/LEVEL> ,
-             <StompBox_fuzz/HI> ,
-             <StompBox_fuzz/MID> ,
-             <StompBox_fuzz/LO> ,
-             <StompBox_fuzz/GAIN> ,
-             <StompBox_fuzz/:bypass> ;
-    lv2:prototype <http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz> ;
-    pedal:instanceNumber 6 ;
-    pedal:preset <http://rakarrack.sourceforge.net/effects.html#StompBox_fuzz:preset:classic_fuzz> ;
-    a ingen:Block .
-
-<StompBox_fuzz/INPUT_L>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/INPUT_R>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/INPUT_L>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<StompBox_fuzz/INPUT_R>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<StompBox_fuzz/BYPASS>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/LEVEL>
-    ingen:value 6.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/HI>
-    ingen:value -12.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/MID>
-    ingen:value 2.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/LO>
-    ingen:value 10.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/GAIN>
-    ingen:value 40.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<StompBox_fuzz/:bypass>
-    ingen:value 1 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 60 ;
-        a midi:Controller ;
-    ] ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET>
-    ingen:canvasX 1265.0 ;
-    ingen:canvasY 901.0 ;
-    ingen:enabled true ;
-    ingen:polyphonic false ;
-    lv2:microVersion 3 ;
-    lv2:minorVersion 28 ;
-    mod:builderVersion 0 ;
-    mod:releaseNumber 0 ;
-    lv2:port <CABINET/in> ,
-             <CABINET/out> ,
-             <CABINET/CLevel> ,
-             <CABINET/CBass> ,
-             <CABINET/CTreble> ,
-             <CABINET/c_model> ,
-             <CABINET/SCHEDULE> ,
-             <CABINET/:bypass> ;
-    lv2:prototype <http://guitarix.sourceforge.net/plugins/gx_cabinet#CABINET> ;
-    pedal:instanceNumber 7 ;
-    pedal:preset <> ;
-    a ingen:Block .
-
-<CABINET/in>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<CABINET/in>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<CABINET/CLevel>
-    ingen:value 2.810268 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/CBass>
-    ingen:value 0.066964 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/CTreble>
-    ingen:value 4.642857 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/c_model>
-    ingen:value 12.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<CABINET/SCHEDULE>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<CABINET/:bypass>
-    ingen:value 0 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
 <:bpb>
     ingen:value 4.000000 ;
     lv2:index 0 ;
@@ -805,32 +813,10 @@ _:b9
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_2>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 10 ;
-    lv2:name "UM 2 MIDI 2" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_2" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:InputPort .
-
-<midi_capture_12>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 11 ;
-    lv2:name "Circuit MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_12" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:InputPort .
-
 <midi_capture_5>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 12 ;
+    lv2:index 10 ;
     lv2:name "nanoKEY MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_5" ;
@@ -838,21 +824,10 @@ _:b9
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_1>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 13 ;
-    lv2:name "UM 2 MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_1" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:InputPort .
-
 <midi_capture_8>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 14 ;
+    lv2:index 11 ;
     lv2:name "APC Key 25 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_8" ;
@@ -860,10 +835,21 @@ _:b9
     a atom:AtomPort ,
         lv2:InputPort .
 
+<midi_capture_1>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 12 ;
+    lv2:name "UM 2 MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_1" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
 <midi_capture_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 15 ;
+    lv2:index 13 ;
     lv2:name "SSCOM MIDI 2" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_4" ;
@@ -871,13 +857,35 @@ _:b9
     a atom:AtomPort ,
         lv2:InputPort .
 
+<midi_capture_12>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 14 ;
+    lv2:name "Circuit MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_12" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
 <midi_capture_3>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 16 ;
+    lv2:index 15 ;
     lv2:name "SSCOM MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_capture_3" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:InputPort .
+
+<midi_capture_2>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 16 ;
+    lv2:name "UM 2 MIDI 2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_capture_2" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -893,32 +901,10 @@ _:b9
     a atom:AtomPort ,
         lv2:OutputPort .
 
-<midi_playback_2>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 18 ;
-    lv2:name "UM 2 MIDI 2" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_2" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:OutputPort .
-
-<midi_playback_12>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 19 ;
-    lv2:name "Circuit MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_12" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:OutputPort .
-
 <midi_playback_7>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 20 ;
+    lv2:index 18 ;
     lv2:name "nanoKEY MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_7" ;
@@ -929,7 +915,7 @@ _:b9
 <midi_playback_1>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 21 ;
+    lv2:index 19 ;
     lv2:name "APC Key 25 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_1" ;
@@ -940,7 +926,7 @@ _:b9
 <midi_playback_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 22 ;
+    lv2:index 20 ;
     lv2:name "SSCOM MIDI 2" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_4" ;
@@ -948,13 +934,35 @@ _:b9
     a atom:AtomPort ,
         lv2:OutputPort .
 
+<midi_playback_12>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 21 ;
+    lv2:name "Circuit MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_12" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
 <midi_playback_3>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 23 ;
+    lv2:index 22 ;
     lv2:name "SSCOM MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_3" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<midi_playback_2>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 23 ;
+    lv2:name "UM 2 MIDI 2" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_2" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:OutputPort .
@@ -997,12 +1005,12 @@ _:b9
     doap:name "BassBalls" ;
     pedal:unitName "Unknown" ;
     pedal:unitModel "None" ;
-    pedal:width 2632 ;
-    pedal:height 1624 ;
+    pedal:width 2726 ;
+    pedal:height 2026 ;
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 31 ;
+    pedal:version 32 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -1012,15 +1020,17 @@ _:b9
               _:b6 ,
               _:b7 ,
               _:b8 ,
-              _:b9 ;
-    ingen:block <AmpVTS> ,
-                <eq> ,
-                <stereo> ,
-                <_bottlerocket_> ,
-                <chor> ,
+              _:b9 ,
+              _:b10 ,
+              _:b11 ;
+    ingen:block <_bottlerocket_> ,
                 <Noisegate> ,
+                <CABINET> ,
                 <StompBox_fuzz> ,
-                <CABINET> ;
+                <chor> ,
+                <AmpVTS> ,
+                <eq> ,
+                <stereo> ;
     lv2:port <:bpb> ,
              <:bpm> ,
              <:rolling> ,
@@ -1031,20 +1041,20 @@ _:b9
              <serial_midi_in> ,
              <serial_midi_out> ,
              <MIDI_in> ,
-             <midi_capture_2> ,
-             <midi_capture_12> ,
              <midi_capture_5> ,
-             <midi_capture_1> ,
              <midi_capture_8> ,
+             <midi_capture_1> ,
              <midi_capture_4> ,
+             <midi_capture_12> ,
              <midi_capture_3> ,
+             <midi_capture_2> ,
              <MIDI_out> ,
-             <midi_playback_2> ,
-             <midi_playback_12> ,
              <midi_playback_7> ,
              <midi_playback_1> ,
              <midi_playback_4> ,
+             <midi_playback_12> ,
              <midi_playback_3> ,
+             <midi_playback_2> ,
              <capture_1> ,
              <capture_2> ,
              <playback_1> ,

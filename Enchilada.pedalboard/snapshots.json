@@ -1,5 +1,5 @@
 {
-    "current": 0,
+    "current": 3,
     "snapshots": [
         {
             "name": "Default",
@@ -147,6 +147,16 @@
                         "hornleak": -16.469999313354492
                     },
                     "preset": "file:///root/.lv2/mod-my1.lv2/my1.ttl"
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -292,6 +302,16 @@
                     "bypassed": false,
                     "ports": {
                         "gain": -4.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
                         "enable": 1.0,
                         "mute": 0.0
                     },
@@ -445,6 +465,16 @@
                         "mute": 0.0
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -590,6 +620,16 @@
                     "bypassed": false,
                     "ports": {
                         "gain": -4.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
                         "enable": 1.0,
                         "mute": 0.0
                     },
@@ -743,6 +783,16 @@
                         "mute": 0.0
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -888,6 +938,16 @@
                     "bypassed": false,
                     "ports": {
                         "gain": -4.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
                         "enable": 1.0,
                         "mute": 0.0
                     },
@@ -1041,6 +1101,16 @@
                         "mute": 0.0
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -1186,6 +1256,16 @@
                     "bypassed": false,
                     "ports": {
                         "gain": -4.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
                         "enable": 1.0,
                         "mute": 0.0
                     },
@@ -1339,6 +1419,16 @@
                         "mute": 0.0
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -1488,6 +1578,16 @@
                         "hornleak": -16.469999313354492
                     },
                     "preset": "file:///root/.lv2/mod-my1.lv2/my1.ttl"
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         }

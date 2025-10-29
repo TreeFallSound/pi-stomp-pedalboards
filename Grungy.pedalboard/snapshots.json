@@ -126,6 +126,16 @@
                         "faslider1_": 0.6961495535028266
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -7.031249999999993,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -252,6 +262,16 @@
                         "fslider1_": 0.0,
                         "faslider0_": 0.10000000149011612,
                         "faslider1_": 0.7016741070755029
+                    },
+                    "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -7.031249999999993,
+                        "enable": 1.0,
+                        "mute": 0.0
                     },
                     "preset": ""
                 }
@@ -382,6 +402,16 @@
                         "faslider1_": 0.6961495535028264
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -7.031249999999993,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -508,6 +538,16 @@
                         "fslider1_": 0.96063,
                         "faslider0_": 0.10000000149011612,
                         "faslider1_": 0.6994642856464323
+                    },
+                    "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -7.031249999999993,
+                        "enable": 1.0,
+                        "mute": 0.0
                     },
                     "preset": ""
                 }

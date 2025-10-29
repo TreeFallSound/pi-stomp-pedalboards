@@ -1,11 +1,25 @@
 {
-    "current": 0,
+    "current": 2,
     "snapshots": [
         {
             "name": "Default",
             "data": {
+                "_luna_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.44419642857142866,
+                        "TONE": 0.75,
+                        "VOLUME": 0.2254464285714286
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "echo": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "ldelay": 62.5,
                         "lfeedback": 50.0,
@@ -18,66 +32,26 @@
                         "haaseffect": 1.0,
                         "swapoutputs": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "mono": {
+                "Noisegate": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "bypass": 0.0,
-                        "cycle": 25.0,
-                        "phase": 45.0,
-                        "width": 8.0,
-                        "depth": 25.78125,
-                        "noClip": 1.0
+                        "open": -21.9140625,
+                        "attack": 0.05580357142857143,
+                        "close": -46.51785714285714,
+                        "mains": 60.0
                     },
-                    "preset": ""
-                },
-                "GUITARIX": {
-                    "bypassed": false,
-                    "ports": {
-                        "MasterGain": -17.0,
-                        "PreGain": 9.955357142857146,
-                        "Distortion": 58.234375,
-                        "Drive": 0.48069196416846743,
-                        "Middle": 0.5625,
-                        "Bass": 0.390625,
-                        "Treble": 0.6584821428571429,
-                        "Cabinet": 10.0,
-                        "Presence": 5.0,
-                        "model": 0.0,
-                        "t_model": 9.0,
-                        "c_model": 18.0
-                    },
-                    "preset": ""
-                },
-                "reve": {
-                    "bypassed": false,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "WETDRY": 100.0,
-                        "PAN": 0.0,
-                        "TIME": 21.0,
-                        "IDEL": 26.0,
-                        "IDELFB": 0.0,
-                        "LPF": 1223.0,
-                        "HPF": 21.0,
-                        "DAMP": 77.0,
-                        "TYPE": 1.0,
-                        "RS": 45.0
-                    },
-                    "preset": "http://rakarrack.sourceforge.net/effects.html#reve:preset:room_2"
-                },
-                "wah": {
-                    "bypassed": true,
-                    "ports": {
-                        "fslider1_": 0.88189,
-                        "faslider0_": 0.10000000149011612,
-                        "faslider1_": 0.6961495535028266
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chor": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
                         "WETDRY": 97.0,
@@ -93,46 +67,102 @@
                         "SUB": 0.0,
                         "INTENSE": 0.0
                     },
-                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1"
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "mono_1": {
+                "mono": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "gain": -7.678571428571425,
-                        "enable": 1.0,
-                        "mute": 0.0
+                        "bypass": 0.0,
+                        "cycle": 25.0,
+                        "phase": 45.0,
+                        "width": 8.0,
+                        "depth": 25.78125,
+                        "noClip": 1.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "CABINET": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "CLevel": 1.5,
                         "CBass": 0.0,
                         "CTreble": 0.0,
                         "c_model": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "Noisegate": {
+                "GUITARIX": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "open": -21.9140625,
-                        "attack": 0.05580357142857143,
-                        "close": -46.51785714285714,
-                        "mains": 60.0
+                        "MasterGain": -17.0,
+                        "PreGain": 9.955357142857146,
+                        "Distortion": 58.234375,
+                        "Drive": 0.48069196416846743,
+                        "Middle": 0.5625,
+                        "Bass": 0.390625,
+                        "Treble": 0.6584821428571429,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 9.0,
+                        "c_model": 18.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "_luna_": {
-                    "bypassed": false,
+                "wah": {
+                    "bypassed": true,
+                    "parameters": {},
                     "ports": {
-                        "BYPASS": 1.0,
-                        "GAIN": 0.44419642857142866,
-                        "TONE": 0.75,
-                        "VOLUME": 0.2254464285714286
+                        "fslider1_": 0.88189,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.6961495535028266
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reve": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "WETDRY": 100.0,
+                        "PAN": 0.0,
+                        "TIME": 21.0,
+                        "IDEL": 26.0,
+                        "IDELFB": 0.0,
+                        "LPF": 1223.0,
+                        "HPF": 21.0,
+                        "DAMP": 77.0,
+                        "TYPE": 1.0,
+                        "RS": 45.0
+                    },
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#reve:preset:room_2",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -7.99107142857142,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
@@ -268,14 +298,38 @@
                         "VOLUME": 0.2254464285714286
                     },
                     "preset": ""
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": ""
                 }
             }
         },
         {
             "name": "Red Car",
             "data": {
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.4609375,
+                        "TONE": 0.6774553571428571,
+                        "VOLUME": 0.1629464285714286
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "echo": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "ldelay": 62.5,
                         "lfeedback": 50.0,
@@ -288,66 +342,26 @@
                         "haaseffect": 1.0,
                         "swapoutputs": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "mono": {
-                    "bypassed": true,
-                    "ports": {
-                        "bypass": 0.0,
-                        "cycle": 25.0,
-                        "phase": 45.0,
-                        "width": 8.0,
-                        "depth": 28.79464285714285,
-                        "noClip": 1.0
-                    },
-                    "preset": ""
-                },
-                "GUITARIX": {
+                "Noisegate": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "MasterGain": 4.151785714285715,
-                        "PreGain": 2.7232142857142776,
-                        "Distortion": 1.0,
-                        "Drive": 0.48953124988474883,
-                        "Middle": 0.5625,
-                        "Bass": 0.390625,
-                        "Treble": 0.6584821428571429,
-                        "Cabinet": 10.0,
-                        "Presence": 5.0,
-                        "model": 6.0,
-                        "t_model": 15.0,
-                        "c_model": 18.0
+                        "open": -43.33705357142855,
+                        "attack": 0.05580357142857143,
+                        "close": -60.982142857142854,
+                        "mains": 60.0
                     },
-                    "preset": ""
-                },
-                "reve": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "WETDRY": 100.0,
-                        "PAN": 0.0,
-                        "TIME": 21.0,
-                        "IDEL": 26.0,
-                        "IDELFB": 0.0,
-                        "LPF": 1223.0,
-                        "HPF": 21.0,
-                        "DAMP": 77.0,
-                        "TYPE": 1.0,
-                        "RS": 45.0
-                    },
-                    "preset": "http://rakarrack.sourceforge.net/effects.html#reve:preset:room_2"
-                },
-                "wah": {
-                    "bypassed": true,
-                    "ports": {
-                        "fslider1_": 0.88189,
-                        "faslider0_": 0.10000000149011612,
-                        "faslider1_": 0.6961495535028266
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chor": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
                         "WETDRY": 42.0,
@@ -363,46 +377,102 @@
                         "SUB": 0.0,
                         "INTENSE": 0.0
                     },
-                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1"
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:flange_1",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "mono_1": {
-                    "bypassed": false,
+                "mono": {
+                    "bypassed": true,
+                    "parameters": {},
                     "ports": {
-                        "gain": 1.0,
-                        "enable": 1.0,
-                        "mute": 0.0
+                        "bypass": 0.0,
+                        "cycle": 25.0,
+                        "phase": 45.0,
+                        "width": 8.0,
+                        "depth": 28.79464285714285,
+                        "noClip": 1.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "CABINET": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "CLevel": 1.5,
                         "CBass": 0.0,
                         "CTreble": 0.0,
                         "c_model": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "Noisegate": {
+                "GUITARIX": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "open": -43.33705357142855,
-                        "attack": 0.05580357142857143,
-                        "close": -60.982142857142854,
-                        "mains": 60.0
+                        "MasterGain": 4.151785714285715,
+                        "PreGain": 2.7232142857142776,
+                        "Distortion": 1.0,
+                        "Drive": 0.48953124988474883,
+                        "Middle": 0.5625,
+                        "Bass": 0.390625,
+                        "Treble": 0.6584821428571429,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 6.0,
+                        "t_model": 15.0,
+                        "c_model": 18.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "_luna_": {
+                "wah": {
                     "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "fslider1_": 0.88189,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.6961495535028266
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reve": {
+                    "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
-                        "GAIN": 0.4609375,
-                        "TONE": 0.6774553571428571,
-                        "VOLUME": 0.1629464285714286
+                        "WETDRY": 100.0,
+                        "PAN": 0.0,
+                        "TIME": 21.0,
+                        "IDEL": 26.0,
+                        "IDELFB": 0.0,
+                        "LPF": 1223.0,
+                        "HPF": 21.0,
+                        "DAMP": 77.0,
+                        "TYPE": 1.0,
+                        "RS": 45.0
                     },
-                    "preset": ""
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#reve:preset:room_2",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         }
