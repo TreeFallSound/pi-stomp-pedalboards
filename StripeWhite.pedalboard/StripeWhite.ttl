@@ -8,193 +8,215 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 _:b1
-    ingen:tail <DS1/Out1> ;
-    ingen:head <tubewarmth/input> .
-
-_:b2
-    ingen:tail <tubewarmth/output> ;
-    ingen:head <Noisegate/in> .
-
-_:b3
-    ingen:tail <BigMuffPi/Out1> ;
-    ingen:head <DS1/In> .
-
-_:b4
-    ingen:tail <Noisegate/out> ;
-    ingen:head <MVerb/lv2_audio_in_1> .
-
-_:b5
-    ingen:tail <capture_1> ;
-    ingen:head <BigMuffPi/In> .
-
-_:b6
-    ingen:tail <capture_1> ;
-    ingen:head <Drop/In> .
-
-_:b7
     ingen:tail <Drop/Out> ;
     ingen:head <tubewarmth/input> .
 
-_:b8
-    ingen:tail <stereo/outL> ;
-    ingen:head <playback_1> .
-
-_:b9
+_:b2
     ingen:tail <stereo/outR> ;
     ingen:head <playback_2> .
 
-_:b10
-    ingen:tail <MVerb/lv2_audio_out_2> ;
-    ingen:head <stereo/inR> .
+_:b3
+    ingen:tail <tubewarmth/output> ;
+    ingen:head <Noisegate/in> .
 
-_:b11
+_:b4
     ingen:tail <MVerb/lv2_audio_out_1> ;
     ingen:head <stereo/inL> .
 
-<Drop>
-    ingen:canvasX 618.0 ;
-    ingen:canvasY 639.3 ;
+_:b5
+    ingen:tail <stereo/outL> ;
+    ingen:head <playback_1> .
+
+_:b6
+    ingen:tail <Noisegate/out> ;
+    ingen:head <MVerb/lv2_audio_in_1> .
+
+_:b7
+    ingen:tail <BigMuffPi/Out1> ;
+    ingen:head <DS1/In> .
+
+_:b8
+    ingen:tail <capture_1> ;
+    ingen:head <BigMuffPi/In> .
+
+_:b9
+    ingen:tail <capture_1> ;
+    ingen:head <Drop/In> .
+
+_:b10
+    ingen:tail <DS1/Out1> ;
+    ingen:head <tubewarmth/input> .
+
+_:b11
+    ingen:tail <MVerb/lv2_audio_out_2> ;
+    ingen:head <stereo/inR> .
+
+<Noisegate>
+    ingen:canvasX 1895.0 ;
+    ingen:canvasY 302.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
-    lv2:microVersion 2 ;
-    lv2:minorVersion 0 ;
+    lv2:microVersion 24 ;
+    lv2:minorVersion 9 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <Drop/In> ,
-             <Drop/Out> ,
-             <Drop/Step> ,
-             <Drop/Gain> ,
-             <Drop/Fidelity> ,
-             <Drop/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/mod-devel/Drop> ;
-    pedal:instanceNumber 1 ;
+    lv2:port <Noisegate/in> ,
+             <Noisegate/out> ,
+             <Noisegate/open> ,
+             <Noisegate/attack> ,
+             <Noisegate/close> ,
+             <Noisegate/mains> ,
+             <Noisegate/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/caps/Noisegate> ;
+    pedal:instanceNumber 3 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<Drop/In>
+<Noisegate/in>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<Drop/In>
+<Noisegate/in>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<Drop/Step>
-    ingen:value -12.000000 ;
+<Noisegate/open>
+    ingen:value -27.561384 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Drop/Gain>
-    ingen:value 12.187500 ;
+<Noisegate/attack>
+    ingen:value 0.066964 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Drop/Fidelity>
-    ingen:value 2.000000 ;
+<Noisegate/close>
+    ingen:value -44.107143 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Drop/:bypass>
+<Noisegate/mains>
+    ingen:value 60.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<Noisegate/:bypass>
     ingen:value 0 ;
-    midi:binding [
-        midi:channel 13 ;
-        midi:controllerNumber 62 ;
-        a midi:Controller ;
-    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<BigMuffPi>
-    ingen:canvasX 417.0 ;
-    ingen:canvasY 111.0 ;
+<DS1>
+    ingen:canvasX 865.0 ;
+    ingen:canvasY 87.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <BigMuffPi/In> ,
-             <BigMuffPi/Out1> ,
-             <BigMuffPi/Tone> ,
-             <BigMuffPi/Level> ,
-             <BigMuffPi/Sustain> ,
-             <BigMuffPi/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/mod-devel/BigMuffPi> ;
-    pedal:instanceNumber 0 ;
+    lv2:port <DS1/In> ,
+             <DS1/Out1> ,
+             <DS1/Tone> ,
+             <DS1/Level> ,
+             <DS1/Dist> ,
+             <DS1/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/DS1> ;
+    pedal:instanceNumber 6 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<BigMuffPi/In>
+<DS1/In>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<BigMuffPi/In>
+<DS1/In>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<BigMuffPi/Tone>
-    ingen:value 0.219000 ;
+<DS1/Tone>
+    ingen:value 0.289128 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<BigMuffPi/Level>
-    ingen:value 0.121652 ;
+<DS1/Level>
+    ingen:value 0.500000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<BigMuffPi/Sustain>
-    ingen:value 0.909598 ;
+<DS1/Dist>
+    ingen:value 0.500000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<BigMuffPi/:bypass>
+<DS1/:bypass>
     ingen:value 0 ;
     midi:binding [
         midi:channel 13 ;
-        midi:controllerNumber 60 ;
+        midi:controllerNumber 61 ;
         a midi:Controller ;
     ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<tubewarmth>
-    ingen:canvasX 1310.0 ;
-    ingen:canvasY 327.3 ;
+<stereo>
+    ingen:canvasX 2739.0 ;
+    ingen:canvasY 433.0 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
-    lv2:microVersion 2 ;
-    lv2:minorVersion 7 ;
+    lv2:microVersion 0 ;
+    lv2:minorVersion 770 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <tubewarmth/input> ,
-             <tubewarmth/output> ,
-             <tubewarmth/drive> ,
-             <tubewarmth/blend> ,
-             <tubewarmth/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/tap/tubewarmth> ;
-    pedal:instanceNumber 5 ;
+    lv2:port <stereo/inL> ,
+             <stereo/inR> ,
+             <stereo/outL> ,
+             <stereo/outR> ,
+             <stereo/gain> ,
+             <stereo/enable> ,
+             <stereo/mute> ,
+             <stereo/level> ,
+             <stereo/:bypass> ;
+    lv2:prototype <http://gareus.org/oss/lv2/tinygain#stereo> ;
+    pedal:instanceNumber 7 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<tubewarmth/input>
+<stereo/inL>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<tubewarmth/input>
+<stereo/inR>
+    a lv2:AudioPort ,
+        lv2:InputPort .
+
+<stereo/inL>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<tubewarmth/drive>
-    ingen:value 5.000000 ;
+<stereo/inR>
+    a lv2:AudioPort ,
+        lv2:OutputPort .
+
+<stereo/gain>
+    ingen:value -3.013393 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<tubewarmth/blend>
-    ingen:value 10.000000 ;
+<stereo/enable>
+    ingen:value 1.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<tubewarmth/:bypass>
+<stereo/mute>
+    ingen:value 0.000000 ;
+    a lv2:ControlPort ,
+        lv2:InputPort .
+
+<stereo/level>
+    a lv2:ControlPort ,
+        lv2:OutputPort .
+
+<stereo/:bypass>
     ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
@@ -293,172 +315,150 @@ _:b11
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<DS1>
-    ingen:canvasX 865.0 ;
-    ingen:canvasY 87.0 ;
+<BigMuffPi>
+    ingen:canvasX 417.0 ;
+    ingen:canvasY 111.0 ;
     ingen:enabled false ;
     ingen:polyphonic false ;
     lv2:microVersion 0 ;
     lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <DS1/In> ,
-             <DS1/Out1> ,
-             <DS1/Tone> ,
-             <DS1/Level> ,
-             <DS1/Dist> ,
-             <DS1/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/mod-devel/DS1> ;
-    pedal:instanceNumber 6 ;
+    lv2:port <BigMuffPi/In> ,
+             <BigMuffPi/Out1> ,
+             <BigMuffPi/Tone> ,
+             <BigMuffPi/Level> ,
+             <BigMuffPi/Sustain> ,
+             <BigMuffPi/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/BigMuffPi> ;
+    pedal:instanceNumber 0 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<DS1/In>
+<BigMuffPi/In>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<DS1/In>
+<BigMuffPi/In>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<DS1/Tone>
-    ingen:value 0.289128 ;
+<BigMuffPi/Tone>
+    ingen:value 0.219000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<DS1/Level>
-    ingen:value 0.500000 ;
+<BigMuffPi/Level>
+    ingen:value 0.137277 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<DS1/Dist>
-    ingen:value 0.500000 ;
+<BigMuffPi/Sustain>
+    ingen:value 0.909598 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<DS1/:bypass>
+<BigMuffPi/:bypass>
     ingen:value 1 ;
     midi:binding [
         midi:channel 13 ;
-        midi:controllerNumber 61 ;
+        midi:controllerNumber 60 ;
         a midi:Controller ;
     ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Noisegate>
-    ingen:canvasX 1895.0 ;
-    ingen:canvasY 302.0 ;
+<Drop>
+    ingen:canvasX 618.0 ;
+    ingen:canvasY 639.3 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
-    lv2:microVersion 24 ;
-    lv2:minorVersion 9 ;
+    lv2:microVersion 2 ;
+    lv2:minorVersion 0 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <Noisegate/in> ,
-             <Noisegate/out> ,
-             <Noisegate/open> ,
-             <Noisegate/attack> ,
-             <Noisegate/close> ,
-             <Noisegate/mains> ,
-             <Noisegate/:bypass> ;
-    lv2:prototype <http://moddevices.com/plugins/caps/Noisegate> ;
-    pedal:instanceNumber 3 ;
+    lv2:port <Drop/In> ,
+             <Drop/Out> ,
+             <Drop/Step> ,
+             <Drop/Gain> ,
+             <Drop/Fidelity> ,
+             <Drop/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/mod-devel/Drop> ;
+    pedal:instanceNumber 1 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<Noisegate/in>
+<Drop/In>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<Noisegate/in>
+<Drop/In>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<Noisegate/open>
-    ingen:value -17.862723 ;
+<Drop/Step>
+    ingen:value -12.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Noisegate/attack>
-    ingen:value 0.055804 ;
+<Drop/Gain>
+    ingen:value -1.473214 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Noisegate/close>
-    ingen:value -40.000000 ;
+<Drop/Fidelity>
+    ingen:value 2.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<Noisegate/mains>
-    ingen:value 60.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<Noisegate/:bypass>
+<Drop/:bypass>
     ingen:value 0 ;
+    midi:binding [
+        midi:channel 13 ;
+        midi:controllerNumber 62 ;
+        a midi:Controller ;
+    ] ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<stereo>
-    ingen:canvasX 2739.5 ;
-    ingen:canvasY 433.6 ;
+<tubewarmth>
+    ingen:canvasX 1310.0 ;
+    ingen:canvasY 327.3 ;
     ingen:enabled true ;
     ingen:polyphonic false ;
-    lv2:microVersion 0 ;
-    lv2:minorVersion 770 ;
+    lv2:microVersion 2 ;
+    lv2:minorVersion 7 ;
     mod:builderVersion 0 ;
     mod:releaseNumber 0 ;
-    lv2:port <stereo/inL> ,
-             <stereo/inR> ,
-             <stereo/outL> ,
-             <stereo/outR> ,
-             <stereo/gain> ,
-             <stereo/enable> ,
-             <stereo/mute> ,
-             <stereo/level> ,
-             <stereo/:bypass> ;
-    lv2:prototype <http://gareus.org/oss/lv2/tinygain#stereo> ;
-    pedal:instanceNumber 7 ;
+    lv2:port <tubewarmth/input> ,
+             <tubewarmth/output> ,
+             <tubewarmth/drive> ,
+             <tubewarmth/blend> ,
+             <tubewarmth/:bypass> ;
+    lv2:prototype <http://moddevices.com/plugins/tap/tubewarmth> ;
+    pedal:instanceNumber 5 ;
     pedal:preset <> ;
     a ingen:Block .
 
-<stereo/inL>
+<tubewarmth/input>
     a lv2:AudioPort ,
         lv2:InputPort .
 
-<stereo/inR>
-    a lv2:AudioPort ,
-        lv2:InputPort .
-
-<stereo/inL>
+<tubewarmth/input>
     a lv2:AudioPort ,
         lv2:OutputPort .
 
-<stereo/inR>
-    a lv2:AudioPort ,
-        lv2:OutputPort .
-
-<stereo/gain>
-    ingen:value -3.013393 ;
+<tubewarmth/drive>
+    ingen:value 5.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<stereo/enable>
-    ingen:value 1.000000 ;
+<tubewarmth/blend>
+    ingen:value 10.000000 ;
     a lv2:ControlPort ,
         lv2:InputPort .
 
-<stereo/mute>
-    ingen:value 0.000000 ;
-    a lv2:ControlPort ,
-        lv2:InputPort .
-
-<stereo/level>
-    a lv2:ControlPort ,
-        lv2:OutputPort .
-
-<stereo/:bypass>
+<tubewarmth/:bypass>
     ingen:value 0 ;
     a lv2:ControlPort ,
         lv2:InputPort .
@@ -544,24 +544,24 @@ _:b11
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_5>
+<midi_capture_12>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 10 ;
-    lv2:name "nanoKEY MIDI 1" ;
+    lv2:name "Circuit MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_5" ;
+    lv2:symbol "midi_capture_12" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_8>
+<midi_capture_5>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 11 ;
-    lv2:name "APC Key 25 MIDI 1" ;
+    lv2:name "nanoKEY MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_8" ;
+    lv2:symbol "midi_capture_5" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -577,24 +577,24 @@ _:b11
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_4>
+<midi_capture_2>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 13 ;
-    lv2:name "SSCOM MIDI 2" ;
+    lv2:name "UM 2 MIDI 2" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_4" ;
+    lv2:symbol "midi_capture_2" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_12>
+<midi_capture_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 14 ;
-    lv2:name "Circuit MIDI 1" ;
+    lv2:name "SSCOM MIDI 2" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_12" ;
+    lv2:symbol "midi_capture_4" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -610,13 +610,13 @@ _:b11
     a atom:AtomPort ,
         lv2:InputPort .
 
-<midi_capture_2>
+<midi_capture_8>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 16 ;
-    lv2:name "UM 2 MIDI 2" ;
+    lv2:name "APC Key 25 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_capture_2" ;
+    lv2:symbol "midi_capture_8" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:InputPort .
@@ -632,10 +632,21 @@ _:b11
     a atom:AtomPort ,
         lv2:OutputPort .
 
-<midi_playback_7>
+<midi_playback_12>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 18 ;
+    lv2:name "Circuit MIDI 1" ;
+    lv2:portProperty lv2:connectionOptional ;
+    lv2:symbol "midi_playback_12" ;
+    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
+    a atom:AtomPort ,
+        lv2:OutputPort .
+
+<midi_playback_7>
+    atom:bufferType atom:Sequence ;
+    atom:supports midi:MidiEvent ;
+    lv2:index 19 ;
     lv2:name "nanoKEY MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_7" ;
@@ -643,13 +654,13 @@ _:b11
     a atom:AtomPort ,
         lv2:OutputPort .
 
-<midi_playback_1>
+<midi_playback_2>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 19 ;
-    lv2:name "APC Key 25 MIDI 1" ;
+    lv2:index 20 ;
+    lv2:name "UM 2 MIDI 2" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_1" ;
+    lv2:symbol "midi_playback_2" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:OutputPort .
@@ -657,21 +668,10 @@ _:b11
 <midi_playback_4>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
-    lv2:index 20 ;
+    lv2:index 21 ;
     lv2:name "SSCOM MIDI 2" ;
     lv2:portProperty lv2:connectionOptional ;
     lv2:symbol "midi_playback_4" ;
-    <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
-    a atom:AtomPort ,
-        lv2:OutputPort .
-
-<midi_playback_12>
-    atom:bufferType atom:Sequence ;
-    atom:supports midi:MidiEvent ;
-    lv2:index 21 ;
-    lv2:name "Circuit MIDI 1" ;
-    lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_12" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:OutputPort .
@@ -687,13 +687,13 @@ _:b11
     a atom:AtomPort ,
         lv2:OutputPort .
 
-<midi_playback_2>
+<midi_playback_1>
     atom:bufferType atom:Sequence ;
     atom:supports midi:MidiEvent ;
     lv2:index 23 ;
-    lv2:name "UM 2 MIDI 2" ;
+    lv2:name "APC Key 25 MIDI 1" ;
     lv2:portProperty lv2:connectionOptional ;
-    lv2:symbol "midi_playback_2" ;
+    lv2:symbol "midi_playback_1" ;
     <http://lv2plug.in/ns/ext/resize-port#minimumSize> 4096 ;
     a atom:AtomPort ,
         lv2:OutputPort .
@@ -741,7 +741,7 @@ _:b11
     pedal:addressings <addressings.json> ;
     pedal:screenshot <screenshot.png> ;
     pedal:thumbnail <thumbnail.png> ;
-    pedal:version 5 ;
+    pedal:version 6 ;
     ingen:polyphony 1 ;
     ingen:arc _:b1 ,
               _:b2 ,
@@ -754,13 +754,13 @@ _:b11
               _:b9 ,
               _:b10 ,
               _:b11 ;
-    ingen:block <Drop> ,
-                <BigMuffPi> ,
-                <tubewarmth> ,
-                <MVerb> ,
+    ingen:block <Noisegate> ,
                 <DS1> ,
-                <Noisegate> ,
-                <stereo> ;
+                <stereo> ,
+                <MVerb> ,
+                <BigMuffPi> ,
+                <Drop> ,
+                <tubewarmth> ;
     lv2:port <:bpb> ,
              <:bpm> ,
              <:rolling> ,
@@ -771,20 +771,20 @@ _:b11
              <serial_midi_in> ,
              <serial_midi_out> ,
              <MIDI_in> ,
-             <midi_capture_5> ,
-             <midi_capture_8> ,
-             <midi_capture_1> ,
-             <midi_capture_4> ,
              <midi_capture_12> ,
-             <midi_capture_3> ,
+             <midi_capture_5> ,
+             <midi_capture_1> ,
              <midi_capture_2> ,
+             <midi_capture_4> ,
+             <midi_capture_3> ,
+             <midi_capture_8> ,
              <MIDI_out> ,
-             <midi_playback_7> ,
-             <midi_playback_1> ,
-             <midi_playback_4> ,
              <midi_playback_12> ,
-             <midi_playback_3> ,
+             <midi_playback_7> ,
              <midi_playback_2> ,
+             <midi_playback_4> ,
+             <midi_playback_3> ,
+             <midi_playback_1> ,
              <capture_1> ,
              <capture_2> ,
              <playback_1> ,
