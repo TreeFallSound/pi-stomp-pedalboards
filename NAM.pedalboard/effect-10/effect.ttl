@@ -1,0 +1,22 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://open-music-kontrollers.ch/lv2/notes#notes> ;
+	state:state [
+		<http://open-music-kontrollers.ch/lv2/notes#text> """To use the Neural Amp Modeler for modeling, you must first download some models:
+- Audition/Download from:  tone3000.com
+- In this UI, Click File Manager (bottom left)
+- Click "NAM Models" folder
+- Click Upload, select files previously downloaded from tone3000.com
+- On pi-Stomp: System Menu > Restart sound engine
+- Now you should be able to select the .nam files in the NAM plugin""" ;
+		<http://open-music-kontrollers.ch/lv2/notes#fontHeight> "25"^^xsd:int
+	] .
+

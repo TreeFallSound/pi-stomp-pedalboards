@@ -4,6 +4,21 @@
         {
             "name": "Default",
             "data": {
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.5,
+                        "GATE": -43.914620535714235,
+                        "ATTACK": 2.0,
+                        "DRIVE": 0.07645089285714285,
+                        "LEVEL": -10.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "stereo": {
                     "bypassed": false,
                     "parameters": {},
@@ -20,7 +35,7 @@
                     "bypassed": false,
                     "parameters": {
                         "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
-                            "/home/pistomp/data/user-files/NAM Models/Marshal/01a Marshall JCM800 2203x BD-2 P8B3M6T7M1G4.nam",
+                            "/home/pistomp/data/user-files/NAM Models/pelennor2170-NAM_models/Tim R Magnatone Super 59 Mkii Max'd.nam",
                             "p"
                         ]
                     },
@@ -29,7 +44,9 @@
                         "output_level": 0.0,
                         "buffered": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "reverb_1": {
                     "bypassed": false,
@@ -44,34 +61,319 @@
                         "stereo_enh": 1.0,
                         "mode": 27.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "CabinetLoader": {
+                "notes": {
                     "bypassed": false,
                     "parameters": {
-                        "https://mod.audio/plugins/CabinetLoader#irfile": [
-                            "/home/pistomp/data/user-files/Speaker Cabinets IRs/412 MESA TRAD V30 57-121.wav",
-                            "p"
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
                         ]
                     },
-                    "ports": {
-                        "level": -12.0,
-                        "lv2_enabled": 1.0
-                    },
-                    "preset": ""
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 11.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        },
+        {
+            "name": "VOX AC-15",
+            "data": {
                 "CollisionDrive": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
                         "BYPASS": 1.0,
-                        "BRIGHT": 0.5,
-                        "GATE": -43.914620535714235,
+                        "BRIGHT": 0.048549000173807144,
+                        "GATE": -43.91461944580078,
                         "ATTACK": 2.0,
-                        "DRIVE": 0.07645089285714285,
+                        "DRIVE": 0.04296875,
                         "LEVEL": -10.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/pelennor2170-NAM_models/Phillipe P VOXAC15-JonAr4.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reverb_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 2800.0,
+                        "drylevel": -4.0,
+                        "wetlevel": -23.34821319580078,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 1.0,
+                        "mode": 27.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "notes": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 12.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        },
+        {
+            "name": "JCM2000",
+            "data": {
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.048549000173807144,
+                        "GATE": -43.91461944580078,
+                        "ATTACK": 2.0,
+                        "DRIVE": 0.04296875,
+                        "LEVEL": -10.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/pelennor2170-NAM_models/Tim R JCM2000 L2 G6.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reverb_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 2800.0,
+                        "drylevel": -4.0,
+                        "wetlevel": -27.90178571428573,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 1.0,
+                        "mode": 14.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "notes": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 3.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        },
+        {
+            "name": "Marshall HiG",
+            "data": {
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.048549000173807144,
+                        "GATE": -43.91461944580078,
+                        "ATTACK": 2.0,
+                        "DRIVE": 0.27734374999999994,
+                        "LEVEL": -10.450892857142858
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/pelennor2170-NAM_models/Tim R JCM2000 L2 G8.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reverb_1": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 2800.0,
+                        "drylevel": -4.0,
+                        "wetlevel": -27.90178571428573,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 1.0,
+                        "mode": 14.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "notes": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 3.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         }

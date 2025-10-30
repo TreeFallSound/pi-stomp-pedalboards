@@ -20,6 +20,57 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
+                "notes": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "TalReverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "unused": 0.0,
+                        "dry": 0.8399999737739563,
+                        "wet": 0.29910698533058167,
+                        "room_size": 0.5360000133514404,
+                        "pre_delay": 0.0,
+                        "high_cut": 0.8158479928970337,
+                        "low_cut": 0.171875,
+                        "damp": 0.0,
+                        "stereo": 0.0
+                    },
+                    "preset": "urn:juce:TalReverb#preset006",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.2539060115814209,
+                        "GATE": -45.81194305419922,
+                        "ATTACK": 3.0,
+                        "DRIVE": 0.0,
+                        "LEVEL": -12.808035850524902
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "Eq10": {
                     "bypassed": false,
                     "parameters": {},
@@ -39,23 +90,110 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "CollisionDrive": {
+                "neural_amp_modeler_lv2": {
                     "bypassed": false,
-                    "parameters": {},
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/pelennor2170-NAM_models/Phillipe P Bug6262-Crunch-NoDrive-Cab-ESR0,004.nam",
+                            "p"
+                        ]
+                    },
                     "ports": {
-                        "BYPASS": 1.0,
-                        "BRIGHT": 0.25390625,
-                        "GATE": -45.81194305419922,
-                        "ATTACK": 3.0,
-                        "DRIVE": 0.0,
-                        "LEVEL": -12.808035850524902
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "TalReverb": {
+                "audiofile": {
+                    "bypassed": true,
+                    "parameters": {
+                        "http://kxstudio.sf.net/carla/file/audio": [
+                            "/home/pistomp/data/user-files/Audio Recordings/Metal Guitar DI.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "loop_mode": 1.0,
+                        "host_sync": 0.0,
+                        "volume": 100.0,
+                        "enabled": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "doubler": {
                     "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "TimeTracking": 0.6830360293388367,
+                        "PitchTracking": 0.49776801466941833,
+                        "DryLevelDb": -1.1160709857940674,
+                        "DryLeftPosition": 0.39676299691200256,
+                        "DryRightPosition": 0.6004459857940674,
+                        "WetLevelDb": -5.78125,
+                        "WetLeftPosition": 0.0,
+                        "WetRightPosition": 1.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 1.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        },
+        {
+            "name": "Drop-C",
+            "data": {
+                "modulay": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 17.31026840209961,
+                        "mix": 11.160714149475098,
+                        "rate": 1.2637929916381836,
+                        "depth": 0.2120400071144104,
+                        "time": 424.140625,
+                        "morph": 50.0,
+                        "tone": 3000.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "notes": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "TalReverb": {
+                    "bypassed": true,
                     "parameters": {},
                     "ports": {
                         "lv2_freewheel": 0.0,
@@ -73,12 +211,71 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "cabsim": {
+                "CollisionDrive": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "Attenuation": 0.0,
-                        "Model": 1.0
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.2539060115814209,
+                        "GATE": -45.81194305419922,
+                        "ATTACK": 3.0,
+                        "DRIVE": 0.0,
+                        "LEVEL": -12.808035850524902
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Eq10": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": -1.03125,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": -1.03125,
+                        "band4khz": -1.754464030265808,
+                        "band8khz": -1.3928569555282593,
+                        "band16khz": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "neural_amp_modeler_lv2": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
+                            "/home/pistomp/data/user-files/NAM Models/pelennor2170-NAM_models/Phillipe P Bugera6262-Crunch-NoDrive-ESR0,002.nam",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "input_level": 0.0,
+                        "output_level": 0.0,
+                        "buffered": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "audiofile": {
+                    "bypassed": true,
+                    "parameters": {
+                        "http://kxstudio.sf.net/carla/file/audio": [
+                            "/home/pistomp/data/user-files/Audio Recordings/Metal Guitar Drop-C DI.wav",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "loop_mode": 1.0,
+                        "host_sync": 0.0,
+                        "volume": 100.0,
+                        "enabled": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -93,7 +290,7 @@
                         "DryLevelDb": -1.1160709857940674,
                         "DryLeftPosition": 0.39676299691200256,
                         "DryRightPosition": 0.6004459857940674,
-                        "WetLevelDb": -1.9140620231628418,
+                        "WetLevelDb": -5.78125,
                         "WetLeftPosition": 0.0,
                         "WetRightPosition": 1.0
                     },
@@ -101,68 +298,16 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "neural_amp_modeler_lv2": {
+                "cabsim": {
                     "bypassed": false,
-                    "parameters": {
-                        "http://github.com/mikeoliphant/neural-amp-modeler-lv2#model": [
-                            "/home/pistomp/data/user-files/NAM Models/Mesa/Mark IIC+ Tight Rhythm.nam",
-                            "p"
-                        ]
-                    },
+                    "parameters": {},
                     "ports": {
-                        "input_level": -3.328798185941025,
-                        "output_level": 0.0,
-                        "buffered": 0.0
+                        "Attenuation": 0.0,
+                        "Model": 1.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
-                },
-                "CabinetLoader": {
-                    "bypassed": false,
-                    "parameters": {
-                        "https://mod.audio/plugins/CabinetLoader#irfile": [
-                            "/home/pistomp/data/user-files/Speaker Cabinets IRs/412 MESA TRAD V30 57-121.wav",
-                            "p"
-                        ]
-                    },
-                    "ports": {
-                        "level": -12.0,
-                        "lv2_enabled": 1.0
-                    },
-                    "preset": ""
-                },
-                "audiofile": {
-                    "bypassed": false,
-                    "parameters": {
-                        "http://kxstudio.sf.net/carla/file/audio": [
-                            "",
-                            "p"
-                        ]
-                    },
-                    "ports": {
-                        "lv2_freewheel": 0.0,
-                        "loop_mode": 1.0,
-                        "host_sync": 0.0,
-                        "volume": 100.0,
-                        "enabled": 1.0
-                    },
-                    "preset": ""
-                },
-                "notes": {
-                    "bypassed": false,
-                    "parameters": {
-                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
-                            "25",
-                            "i"
-                        ],
-                        "http://open-music-kontrollers.ch/lv2/notes#text": [
-                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
-                            "s"
-                        ]
-                    },
-                    "ports": {},
-                    "preset": ""
                 }
             }
         }
