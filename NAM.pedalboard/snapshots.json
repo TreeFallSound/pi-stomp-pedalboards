@@ -92,6 +92,31 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": ""
+                },
+                "notes_1": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            20.0,
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "Many reverbs/delays/IR's, when following NAM, will create a horible burst of noise when the pedalboard is first loaded.\n\nThe cause is NaN (not a number) output from NAM.  A reverb/delay with feedback can recycle this bad output creating a nasty digital cacophony.\n\nA few reverbs seem to be NaN-safe including: DISTRHO DIE Reverb, and the X42 ",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": ""
                 }
             }
         },
@@ -186,6 +211,31 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": ""
+                },
+                "notes_1": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            20.0,
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "Many reverbs/delays/IR's, when following NAM, will create a horible burst of noise when the pedalboard is first loaded.\n\nThe cause is NaN (not a number) output from NAM.  A reverb/delay with feedback can recycle this bad output creating a nasty digital cacophony.\n\nA few reverbs seem to be NaN-safe including: DISTRHO DIE Reverb, and the X42 ",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": ""
                 }
             }
         },
@@ -280,6 +330,31 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": ""
+                },
+                "notes_1": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            20.0,
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "Many reverbs/delays/IR's, when following NAM, will create a horible burst of noise when the pedalboard is first loaded.\n\nThe cause is NaN (not a number) output from NAM.  A reverb/delay with feedback can recycle this bad output creating a nasty digital cacophony.\n\nA few reverbs seem to be NaN-safe including: DISTRHO DIE Reverb, and the X42 ",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": ""
                 }
             }
         },
@@ -374,6 +449,31 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": ""
+                },
+                "notes_1": {
+                    "bypassed": false,
+                    "parameters": {
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            20.0,
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "Many reverbs/delays/IR's, when following NAM, will create a horible burst of noise when the pedalboard is first loaded.\n\nThe cause is NaN (not a number) output from NAM.  A reverb/delay with feedback can recycle this bad output creating a nasty digital cacophony.\n\nA few reverbs seem to be NaN-safe including: DISTRHO DIE Reverb, and the X42 ",
+                            "s"
+                        ]
+                    },
+                    "ports": {},
+                    "preset": ""
                 }
             }
         }
