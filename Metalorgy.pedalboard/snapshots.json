@@ -153,6 +153,16 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.560546875,
+                        "enable": 1.0
+                    },
+                    "preset": ""
                 }
             }
         },
@@ -308,6 +318,16 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.560546875,
+                        "enable": 1.0
+                    },
+                    "preset": ""
                 }
             }
         }
