@@ -1,94 +1,48 @@
 {
-    "current": 0,
+    "current": 3,
     "snapshots": [
         {
             "name": "Default",
             "data": {
                 "_sd1sim_": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
                         "DRIVE": 0.5,
                         "LEVEL": -8.0,
                         "TONE": 730.0
                     },
-                    "preset": ""
-                },
-                "bolliedelay": {
-                    "bypassed": true,
-                    "ports": {
-                        "tempo_host": 120.0,
-                        "tempo_user": 120.0,
-                        "tempo_mode": 1.0,
-                        "tap": 0.0,
-                        "mix": 47.209821428571416,
-                        "feedback": 45.42410714285714,
-                        "crossf": 20.0,
-                        "low_on": 0.0,
-                        "low_f": 20.0,
-                        "low_q": 1.0,
-                        "high_on": 0.0,
-                        "high_f": 7500.0,
-                        "high_q": 1.0,
-                        "div_l": 0.0,
-                        "div_r": 3.0
-                    },
-                    "preset": ""
-                },
-                "modulay": {
-                    "bypassed": true,
-                    "ports": {
-                        "repeats": 41.25,
-                        "mix": 100.0,
-                        "rate": 2.1248109340667725,
-                        "depth": 1.2155170440673828,
-                        "time": 214.0,
-                        "morph": 29.6875,
-                        "tone": 3351.33740234375
-                    },
-                    "preset": "file:///root/.lv2/modulay-TheEdge_Left.lv2/TheEdge_Left.ttl"
-                },
-                "roomy": {
-                    "bypassed": false,
-                    "ports": {
-                        "time": 0.21428599953651428,
-                        "damping": 0.8113840222358704,
-                        "dry_wet": 0.19307999312877655
-                    },
-                    "preset": ""
-                },
-                "CABINET": {
-                    "bypassed": true,
-                    "ports": {
-                        "CLevel": 1.5,
-                        "CBass": 0.3125,
-                        "CTreble": 0.78125,
-                        "c_model": 0.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "Dynamics": {
-                    "bypassed": false,
+                    "bypassed": true,
+                    "parameters": {},
                     "ports": {
-                        "thresh": -23.88392857142857,
-                        "ratio": -4.01171875,
+                        "thresh": -23.883928298950195,
+                        "ratio": -4.011719226837158,
                         "output": 3.0,
-                        "attack": 13.137751754752372,
-                        "release": 53.71221305608528,
-                        "limiter": 10.0,
+                        "attack": 13.140000343322754,
+                        "release": 40.95969772338867,
+                        "limiter": -9.0,
                         "gate_thr": -60.0,
                         "gate_att": 5.0,
-                        "gate_rel": 9.000000000000002,
+                        "gate_rel": 9.0,
                         "mix": 100.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "GUITARIX": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "MasterGain": -7.0,
-                        "PreGain": 1.7410714285714377,
-                        "Distortion": 36.68861607142857,
+                        "MasterGain": -6.0,
+                        "PreGain": 1.7410709857940674,
+                        "Distortion": 36.68861770629883,
                         "Drive": 0.25,
                         "Middle": 0.5,
                         "Bass": 0.5,
@@ -99,34 +53,110 @@
                         "t_model": 8.0,
                         "c_model": 18.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "modulay": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 0.0,
+                        "mix": 27.56696319580078,
+                        "rate": 2.1248109340667725,
+                        "depth": 1.4496649503707886,
+                        "time": 570.0,
+                        "morph": 29.6875,
+                        "tone": 3351.33740234375
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "tubewarmth": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "drive": 2.8843750953674316,
+                        "blend": 5.513392925262451
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "bolliedelay": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "tempo_host": 120.0,
+                        "tempo_user": 106.0,
+                        "tempo_mode": 1.0,
+                        "tap": 0.0,
+                        "mix": 43.30356979370117,
+                        "feedback": 18.97321319580078,
+                        "crossf": 20.0,
+                        "low_on": 0.0,
+                        "low_f": 20.0,
+                        "low_q": 1.0,
+                        "high_on": 0.0,
+                        "high_f": 7500.0,
+                        "high_q": 1.0,
+                        "div_l": 0.0,
+                        "div_r": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "CABINET": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.78125,
+                        "c_model": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "Noisegate": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "open": -40.0,
                         "attack": 0.05999999865889549,
                         "close": -56.0,
                         "mains": 60.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "stereo": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "gain": -4.0,
+                        "gain": 1.0267857142857153,
                         "enable": 1.0,
                         "mute": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "tubewarmth": {
+                "roomy": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "drive": 10.0,
-                        "blend": 6.294642857142858
+                        "time": 0.21428599953651428,
+                        "damping": 0.8113840222358704,
+                        "dry_wet": 0.19307999312877655
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
@@ -391,18 +421,87 @@
         {
             "name": "Sunday",
             "data": {
+                "Dynamics": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "thresh": -23.88392857142857,
+                        "ratio": -4.01171875,
+                        "output": 3.0,
+                        "attack": 13.137751754752372,
+                        "release": 53.71221305608528,
+                        "limiter": 10.0,
+                        "gate_thr": -60.0,
+                        "gate_att": 5.0,
+                        "gate_rel": 9.000000000000002,
+                        "mix": 100.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "_sd1sim_": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 1.0,
                         "DRIVE": 0.5044642857142857,
                         "LEVEL": -8.0,
                         "TONE": 730.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "roomy": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "time": 0.21428599953651428,
+                        "damping": 0.8113840222358704,
+                        "dry_wet": 0.19307999312877655
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "open": -40.0,
+                        "attack": 0.05999999865889549,
+                        "close": -52.767857142857146,
+                        "mains": 60.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "GUITARIX": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "MasterGain": -4.3,
+                        "PreGain": 1.7410714285714377,
+                        "Distortion": 36.68861607142857,
+                        "Drive": 0.25,
+                        "Middle": 0.5,
+                        "Bass": 0.5,
+                        "Treble": 0.5,
+                        "Cabinet": 10.0,
+                        "Presence": 5.0,
+                        "model": 0.0,
+                        "t_model": 8.0,
+                        "c_model": 18.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "bolliedelay": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "tempo_host": 120.0,
                         "tempo_user": 120.0,
@@ -420,10 +519,36 @@
                         "div_l": 0.0,
                         "div_r": 3.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "tubewarmth": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "drive": 10.0,
+                        "blend": 6.294642857142858
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -5.022321428571427,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "modulay": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "repeats": 41.25,
                         "mix": 100.0,
@@ -433,87 +558,22 @@
                         "morph": 29.6875,
                         "tone": 3351.33740234375
                     },
-                    "preset": "file:///root/.lv2/modulay-TheEdge_Left.lv2/TheEdge_Left.ttl"
-                },
-                "roomy": {
-                    "bypassed": false,
-                    "ports": {
-                        "time": 0.21428599953651428,
-                        "damping": 0.8113840222358704,
-                        "dry_wet": 0.19307999312877655
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "CABINET": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "CLevel": 1.5,
                         "CBass": 0.3125,
                         "CTreble": 0.78125,
                         "c_model": 0.0
                     },
-                    "preset": ""
-                },
-                "Dynamics": {
-                    "bypassed": false,
-                    "ports": {
-                        "thresh": -23.88392857142857,
-                        "ratio": -4.01171875,
-                        "output": 3.0,
-                        "attack": 13.137751754752372,
-                        "release": 53.71221305608528,
-                        "limiter": 10.0,
-                        "gate_thr": -60.0,
-                        "gate_att": 5.0,
-                        "gate_rel": 9.000000000000002,
-                        "mix": 100.0
-                    },
-                    "preset": ""
-                },
-                "GUITARIX": {
-                    "bypassed": false,
-                    "ports": {
-                        "MasterGain": -4.3,
-                        "PreGain": 1.7410714285714377,
-                        "Distortion": 36.68861607142857,
-                        "Drive": 0.25,
-                        "Middle": 0.5,
-                        "Bass": 0.5,
-                        "Treble": 0.5,
-                        "Cabinet": 10.0,
-                        "Presence": 5.0,
-                        "model": 0.0,
-                        "t_model": 8.0,
-                        "c_model": 18.0
-                    },
-                    "preset": ""
-                },
-                "Noisegate": {
-                    "bypassed": false,
-                    "ports": {
-                        "open": -40.0,
-                        "attack": 0.05999999865889549,
-                        "close": -52.767857142857146,
-                        "mains": 60.0
-                    },
-                    "preset": ""
-                },
-                "stereo": {
-                    "bypassed": false,
-                    "ports": {
-                        "gain": -4.0,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
-                },
-                "tubewarmth": {
-                    "bypassed": false,
-                    "ports": {
-                        "drive": 10.0,
-                        "blend": 6.294642857142858
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         }

@@ -1,9 +1,69 @@
 {
-    "current": 0,
+    "current": 5,
     "snapshots": [
         {
             "name": "Default",
             "data": {
+                "_hotbox_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "BASS": 0.6305800080299377,
+                        "GAIN": 0.46875,
+                        "TREBLE": 0.26004499197006226,
+                        "VOLUME": 0.1171879991889
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Compress": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "measure": 0.0,
+                        "mode": 1.0,
+                        "threshold": 0.5,
+                        "strength": 0.25,
+                        "attack": 0.75,
+                        "release": 0.5,
+                        "gain": 3.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.25,
+                        "TONE": 0.5,
+                        "VOLUME": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 1886.1607666015625,
+                        "drylevel": -4.0,
+                        "wetlevel": -23.928571701049805,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 20.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "bolliedelay": {
                     "bypassed": true,
                     "parameters": {},
@@ -32,40 +92,9 @@
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "gain": -2.009999990463257,
+                        "gain": 1.5178571428571495,
                         "enable": 1.0,
                         "mute": 0.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "reverb": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "decay": 1886.1607666015625,
-                        "drylevel": -4.0,
-                        "wetlevel": -23.928571701049805,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 0.0,
-                        "mode": 20.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "_hotbox_": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "BASS": 0.6305800080299377,
-                        "GAIN": 0.46875,
-                        "TREBLE": 0.26004499197006226,
-                        "VOLUME": 0.1171879991889
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -86,64 +115,15 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
-                },
-                "_luna_": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "GAIN": 0.25,
-                        "TONE": 0.5,
-                        "VOLUME": 0.5
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "Compress": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "measure": 0.0,
-                        "mode": 1.0,
-                        "threshold": 0.5,
-                        "strength": 0.25,
-                        "attack": 0.75,
-                        "release": 0.5,
-                        "gain": 3.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
                 }
             }
         },
         {
             "name": "Deeper",
             "data": {
-                "bolliedelay": {
-                    "bypassed": false,
-                    "ports": {
-                        "tempo_host": 120.0,
-                        "tempo_user": 109.171875,
-                        "tempo_mode": 1.0,
-                        "tap": 1.0,
-                        "mix": 40.625,
-                        "feedback": 51.450892857142826,
-                        "crossf": 20.0,
-                        "low_on": 1.0,
-                        "low_f": 20.0,
-                        "low_q": 1.0,
-                        "high_on": 1.0,
-                        "high_f": 7500.0,
-                        "high_q": 1.0,
-                        "div_l": 3.0,
-                        "div_r": 0.0
-                    },
-                    "preset": ""
-                },
                 "_hotbox_": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 1.0,
                         "BASS": 0.6305803571428571,
@@ -151,10 +131,13 @@
                         "TREBLE": 0.2600446428571431,
                         "VOLUME": 0.0859375
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "Compress": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "measure": 0.0,
                         "mode": 1.0,
@@ -164,10 +147,26 @@
                         "release": 0.3794642857142857,
                         "gain": 5.8125
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.25,
+                        "TONE": 0.5,
+                        "VOLUME": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "reverb": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "decay": 1886.1607142857144,
                         "drylevel": -0.625,
@@ -178,47 +177,13 @@
                         "stereo_enh": 0.0,
                         "mode": 20.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "mono": {
-                    "bypassed": false,
-                    "ports": {
-                        "gain": -6.0,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
-                },
-                "chorusflanger": {
-                    "bypassed": false,
-                    "ports": {
-                        "Frequency": 1.395089285714286,
-                        "LRPhaseShift": 90.0,
-                        "Depth": 70.53571428571429,
-                        "Delay": 19.084821701049805,
-                        "Contour": 279.3310852050781,
-                        "DryLevel": -0.625,
-                        "WetLevel": -8.359375
-                    },
-                    "preset": ""
-                },
-                "_luna_": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "GAIN": 0.25,
-                        "TONE": 0.5,
-                        "VOLUME": 0.5
-                    },
-                    "preset": ""
-                }
-            }
-        },
-        {
-            "name": "Changing",
-            "data": {
                 "bolliedelay": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "tempo_host": 120.0,
                         "tempo_user": 109.171875,
@@ -236,10 +201,46 @@
                         "div_l": 3.0,
                         "div_r": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
+                "mono": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -2.946428571428573,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "chorusflanger": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Frequency": 1.395089285714286,
+                        "LRPhaseShift": 90.0,
+                        "Depth": 70.53571428571429,
+                        "Delay": 19.084821701049805,
+                        "Contour": 279.3310852050781,
+                        "DryLevel": -0.625,
+                        "WetLevel": -8.359375
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                }
+            }
+        },
+        {
+            "name": "Changing",
+            "data": {
                 "_hotbox_": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 1.0,
                         "BASS": 0.6305803571428571,
@@ -247,10 +248,13 @@
                         "TREBLE": 0.2600446428571431,
                         "VOLUME": 0.1171875
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "Compress": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "measure": 0.0,
                         "mode": 1.0,
@@ -260,10 +264,26 @@
                         "release": 0.3794642857142857,
                         "gain": 5.8125
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.25,
+                        "TONE": 0.5,
+                        "VOLUME": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "reverb": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "decay": 1886.1607142857144,
                         "drylevel": -0.625,
@@ -274,19 +294,49 @@
                         "stereo_enh": 0.0,
                         "mode": 20.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "bolliedelay": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "tempo_host": 120.0,
+                        "tempo_user": 109.171875,
+                        "tempo_mode": 1.0,
+                        "tap": 1.0,
+                        "mix": 40.625,
+                        "feedback": 51.450892857142826,
+                        "crossf": 20.0,
+                        "low_on": 1.0,
+                        "low_f": 20.0,
+                        "low_q": 1.0,
+                        "high_on": 1.0,
+                        "high_f": 7500.0,
+                        "high_q": 1.0,
+                        "div_l": 3.0,
+                        "div_r": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "mono": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "gain": -6.0,
+                        "gain": -4.017857142857144,
                         "enable": 1.0,
                         "mute": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chorusflanger": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "Frequency": 1.395089285714286,
                         "LRPhaseShift": 90.0,
@@ -296,25 +346,78 @@
                         "DryLevel": -0.625,
                         "WetLevel": -8.359375
                     },
-                    "preset": ""
-                },
-                "_luna_": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "GAIN": 0.25,
-                        "TONE": 0.5,
-                        "VOLUME": 0.5
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
         {
             "name": "Zero",
             "data": {
+                "_hotbox_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BASS": 0.6305803571428571,
+                        "GAIN": 0.5691964285714287,
+                        "TREBLE": 0.2600446428571431,
+                        "VOLUME": 0.109375
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Compress": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "measure": 0.0,
+                        "mode": 1.0,
+                        "threshold": 0.2544642857142858,
+                        "strength": 1.0,
+                        "attack": 0.2946428571428571,
+                        "release": 0.3794642857142857,
+                        "gain": 5.8125
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.25,
+                        "TONE": 0.5,
+                        "VOLUME": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 1886.1607142857144,
+                        "drylevel": -0.625,
+                        "wetlevel": -34.375000000000014,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 20.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "bolliedelay": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "tempo_host": 120.0,
                         "tempo_user": 109.171875,
@@ -332,57 +435,25 @@
                         "div_l": 3.0,
                         "div_r": 3.0
                     },
-                    "preset": ""
-                },
-                "_hotbox_": {
-                    "bypassed": false,
-                    "ports": {
-                        "BYPASS": 1.0,
-                        "BASS": 0.6305803571428571,
-                        "GAIN": 0.5691964285714287,
-                        "TREBLE": 0.2600446428571431,
-                        "VOLUME": 0.109375
-                    },
-                    "preset": ""
-                },
-                "Compress": {
-                    "bypassed": true,
-                    "ports": {
-                        "measure": 0.0,
-                        "mode": 1.0,
-                        "threshold": 0.2544642857142858,
-                        "strength": 1.0,
-                        "attack": 0.2946428571428571,
-                        "release": 0.3794642857142857,
-                        "gain": 5.8125
-                    },
-                    "preset": ""
-                },
-                "reverb": {
-                    "bypassed": false,
-                    "ports": {
-                        "decay": 1886.1607142857144,
-                        "drylevel": -0.625,
-                        "wetlevel": -34.375000000000014,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 0.0,
-                        "mode": 20.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "mono": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "gain": -6.0,
+                        "gain": -3.0133928571428577,
                         "enable": 1.0,
                         "mute": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chorusflanger": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "Frequency": 1.7466517857142856,
                         "LRPhaseShift": 90.0,
@@ -392,25 +463,61 @@
                         "DryLevel": -0.625,
                         "WetLevel": -8.359375
                     },
-                    "preset": ""
-                },
-                "_luna_": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "GAIN": 0.25,
-                        "TONE": 0.5,
-                        "VOLUME": 0.5
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
         {
             "name": "Outside",
             "data": {
+                "_hotbox_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "BASS": 0.6305803571428571,
+                        "GAIN": 0.46875,
+                        "TREBLE": 0.2600446428571431,
+                        "VOLUME": 0.1171875
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Compress": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "measure": 0.0,
+                        "mode": 1.0,
+                        "threshold": 0.2544642857142858,
+                        "strength": 1.0,
+                        "attack": 0.2946428571428571,
+                        "release": 0.3794642857142857,
+                        "gain": 5.8125
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.25,
+                        "TONE": 0.5,
+                        "VOLUME": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "reverb": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "decay": 1886.1607142857144,
                         "drylevel": -0.625,
@@ -421,34 +528,13 @@
                         "stereo_enh": 0.0,
                         "mode": 20.0
                     },
-                    "preset": ""
-                },
-                "Compress": {
-                    "bypassed": true,
-                    "ports": {
-                        "measure": 0.0,
-                        "mode": 1.0,
-                        "threshold": 0.2544642857142858,
-                        "strength": 1.0,
-                        "attack": 0.2946428571428571,
-                        "release": 0.3794642857142857,
-                        "gain": 5.8125
-                    },
-                    "preset": ""
-                },
-                "_hotbox_": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "BASS": 0.6305803571428571,
-                        "GAIN": 0.46875,
-                        "TREBLE": 0.2600446428571431,
-                        "VOLUME": 0.1171875
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "bolliedelay": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "tempo_host": 120.0,
                         "tempo_user": 109.171875,
@@ -466,10 +552,25 @@
                         "div_l": 3.0,
                         "div_r": 3.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "mono": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -2.633928571428573,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chorusflanger": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "Frequency": 1.395089285714286,
                         "LRPhaseShift": 90.0,
@@ -479,34 +580,78 @@
                         "DryLevel": -0.625,
                         "WetLevel": -5.78125
                     },
-                    "preset": ""
-                },
-                "mono": {
-                    "bypassed": false,
-                    "ports": {
-                        "gain": -6.0,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
-                },
-                "_luna_": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "GAIN": 0.25,
-                        "TONE": 0.5,
-                        "VOLUME": 0.5
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
         {
             "name": "1Thang",
             "data": {
+                "_hotbox_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BASS": 0.6305803571428571,
+                        "GAIN": 0.25,
+                        "TREBLE": 0.2600446428571431,
+                        "VOLUME": 0.265625
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Compress": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "measure": 0.0,
+                        "mode": 1.0,
+                        "threshold": 0.2544642857142858,
+                        "strength": 1.0,
+                        "attack": 0.2946428571428571,
+                        "release": 0.3794642857142857,
+                        "gain": 5.8125
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_luna_": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 0.0,
+                        "GAIN": 0.25,
+                        "TONE": 0.5,
+                        "VOLUME": 0.5
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "reverb": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "decay": 1886.1607142857144,
+                        "drylevel": -0.625,
+                        "wetlevel": -20.625,
+                        "combs_en": 1.0,
+                        "allps_en": 1.0,
+                        "bandpass_en": 1.0,
+                        "stereo_enh": 0.0,
+                        "mode": 20.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "bolliedelay": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "tempo_host": 120.0,
                         "tempo_user": 109.171875,
@@ -524,57 +669,25 @@
                         "div_l": 3.0,
                         "div_r": 3.0
                     },
-                    "preset": ""
-                },
-                "_hotbox_": {
-                    "bypassed": false,
-                    "ports": {
-                        "BYPASS": 1.0,
-                        "BASS": 0.6305803571428571,
-                        "GAIN": 0.25,
-                        "TREBLE": 0.2600446428571431,
-                        "VOLUME": 0.265625
-                    },
-                    "preset": ""
-                },
-                "Compress": {
-                    "bypassed": true,
-                    "ports": {
-                        "measure": 0.0,
-                        "mode": 1.0,
-                        "threshold": 0.2544642857142858,
-                        "strength": 1.0,
-                        "attack": 0.2946428571428571,
-                        "release": 0.3794642857142857,
-                        "gain": 5.8125
-                    },
-                    "preset": ""
-                },
-                "reverb": {
-                    "bypassed": false,
-                    "ports": {
-                        "decay": 1886.1607142857144,
-                        "drylevel": -0.625,
-                        "wetlevel": -20.625,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 0.0,
-                        "mode": 20.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "mono": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "gain": -6.0,
+                        "gain": -3.0580357142857153,
                         "enable": 1.0,
                         "mute": 0.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chorusflanger": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "Frequency": 1.395089285714286,
                         "LRPhaseShift": 90.0,
@@ -584,17 +697,9 @@
                         "DryLevel": -0.625,
                         "WetLevel": -6.640625
                     },
-                    "preset": ""
-                },
-                "_luna_": {
-                    "bypassed": true,
-                    "ports": {
-                        "BYPASS": 0.0,
-                        "GAIN": 0.25,
-                        "TONE": 0.5,
-                        "VOLUME": 0.5
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         }
