@@ -10,6 +10,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://github.com/mikeoliphant/neural-amp-modeler-lv2> ;
 	state:state [
-		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Phillipe%20P%20VOXAC15-JonAr4.nam>
+		<http://github.com/mikeoliphant/neural-amp-modeler-lv2#model> <Tim%20R%20Magnatone%20Super%2059%20Mkii%20Max'd.nam>
 	] .
 
