@@ -4,17 +4,65 @@
         {
             "name": "Default",
             "data": {
-                "modulay": {
+                "Eq10": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": -1.03125,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": -1.03125,
+                        "band4khz": -1.754464030265808,
+                        "band8khz": -1.3928569555282593,
+                        "band16khz": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "audiofile": {
+                    "bypassed": true,
+                    "parameters": {
+                        "http://kxstudio.sf.net/carla/file/audio": [
+                            "",
+                            "p"
+                        ]
+                    },
+                    "ports": {
+                        "lv2_freewheel": 0.0,
+                        "loop_mode": 1.0,
+                        "host_sync": 0.0,
+                        "volume": 100.0,
+                        "enabled": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "repeats": 17.31026840209961,
-                        "mix": 11.160714149475098,
-                        "rate": 1.2637929916381836,
-                        "depth": 0.2120400071144104,
-                        "time": 424.140625,
-                        "morph": 50.0,
-                        "tone": 3000.0
+                        "Attenuation": 0.0,
+                        "Model": 1.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.2539060115814209,
+                        "GATE": -45.81194305419922,
+                        "ATTACK": 3.0,
+                        "DRIVE": 0.0,
+                        "LEVEL": -12.808035850524902
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -37,54 +85,46 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "TalReverb": {
+                "a_reverb": {
                     "bypassed": true,
                     "parameters": {},
                     "ports": {
-                        "lv2_freewheel": 0.0,
-                        "unused": 0.0,
-                        "dry": 0.8399999737739563,
-                        "wet": 0.29910698533058167,
-                        "room_size": 0.5360000133514404,
-                        "pre_delay": 0.0,
-                        "high_cut": 0.8158479928970337,
-                        "low_cut": 0.171875,
-                        "damp": 0.0,
-                        "stereo": 0.0
-                    },
-                    "preset": "urn:juce:TalReverb#preset006",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "CollisionDrive": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "BYPASS": 1.0,
-                        "BRIGHT": 0.2539060115814209,
-                        "GATE": -45.81194305419922,
-                        "ATTACK": 3.0,
-                        "DRIVE": 0.0,
-                        "LEVEL": -12.808035850524902
+                        "blend": 0.18526799976825714,
+                        "roomsz": 0.7851560115814209,
+                        "enable": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "Eq10": {
+                "doubler": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "band31hz": 0.0,
-                        "band63hz": 0.0,
-                        "band125hz": -1.03125,
-                        "band250hz": 0.0,
-                        "band500hz": 0.0,
-                        "band1khz": 0.0,
-                        "band2khz": -1.03125,
-                        "band4khz": -1.754464030265808,
-                        "band8khz": -1.3928569555282593,
-                        "band16khz": 0.0
+                        "TimeTracking": 0.6830360293388367,
+                        "PitchTracking": 0.49776801466941833,
+                        "DryLevelDb": -1.1160709857940674,
+                        "DryLeftPosition": 0.39676299691200256,
+                        "DryRightPosition": 0.6004459857940674,
+                        "WetLevelDb": -5.78125,
+                        "WetLeftPosition": 0.0,
+                        "WetRightPosition": 1.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "modulay": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 17.31026840209961,
+                        "mix": 11.160714149475098,
+                        "rate": 1.2637929916381836,
+                        "depth": 0.2120400071144104,
+                        "time": 424.140625,
+                        "morph": 50.0,
+                        "tone": 3000.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -100,18 +140,23 @@
                     },
                     "ports": {
                         "input_level": 0.0,
-                        "output_level": 0.0,
+                        "output_level": -4.084821428571427,
                         "buffered": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
-                },
+                }
+            }
+        },
+        {
+            "name": "Drop-C",
+            "data": {
                 "audiofile": {
                     "bypassed": true,
                     "parameters": {
                         "http://kxstudio.sf.net/carla/file/audio": [
-                            "/home/pistomp/data/user-files/Audio Recordings/Metal Guitar DI.wav",
+                            "",
                             "p"
                         ]
                     },
@@ -121,116 +166,6 @@
                         "host_sync": 0.0,
                         "volume": 100.0,
                         "enabled": 0.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "doubler": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "TimeTracking": 0.6830360293388367,
-                        "PitchTracking": 0.49776801466941833,
-                        "DryLevelDb": -1.1160709857940674,
-                        "DryLeftPosition": 0.39676299691200256,
-                        "DryRightPosition": 0.6004459857940674,
-                        "WetLevelDb": -5.78125,
-                        "WetLeftPosition": 0.0,
-                        "WetRightPosition": 1.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "cabsim": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "Attenuation": 0.0,
-                        "Model": 1.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "a_reverb": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "blend": 0.30000001192092896,
-                        "roomsz": 0.560546875,
-                        "enable": 1.0
-                    },
-                    "preset": ""
-                }
-            }
-        },
-        {
-            "name": "Drop-C",
-            "data": {
-                "modulay": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "repeats": 17.31026840209961,
-                        "mix": 11.160714149475098,
-                        "rate": 1.2637929916381836,
-                        "depth": 0.2120400071144104,
-                        "time": 424.140625,
-                        "morph": 50.0,
-                        "tone": 3000.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "notes": {
-                    "bypassed": false,
-                    "parameters": {
-                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
-                            "25",
-                            "i"
-                        ],
-                        "http://open-music-kontrollers.ch/lv2/notes#text": [
-                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
-                            "s"
-                        ]
-                    },
-                    "ports": {},
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "TalReverb": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "lv2_freewheel": 0.0,
-                        "unused": 0.0,
-                        "dry": 0.8399999737739563,
-                        "wet": 0.29910698533058167,
-                        "room_size": 0.5360000133514404,
-                        "pre_delay": 0.0,
-                        "high_cut": 0.8158479928970337,
-                        "low_cut": 0.171875,
-                        "damp": 0.0,
-                        "stereo": 0.0
-                    },
-                    "preset": "urn:juce:TalReverb#preset006",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "CollisionDrive": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "BYPASS": 1.0,
-                        "BRIGHT": 0.2539060115814209,
-                        "GATE": -45.81194305419922,
-                        "ATTACK": 3.0,
-                        "DRIVE": 0.0,
-                        "LEVEL": -12.808035850524902
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -255,6 +190,37 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
+                "modulay": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "repeats": 17.31026840209961,
+                        "mix": 11.160714149475098,
+                        "rate": 1.2637929916381836,
+                        "depth": 0.2120400071144104,
+                        "time": 424.140625,
+                        "morph": 50.0,
+                        "tone": 3000.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "CollisionDrive": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "BRIGHT": 0.2539060115814209,
+                        "GATE": -45.81194305419922,
+                        "ATTACK": 3.0,
+                        "DRIVE": 0.0,
+                        "LEVEL": -12.808035850524902
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
                 "neural_amp_modeler_lv2": {
                     "bypassed": false,
                     "parameters": {
@@ -265,27 +231,37 @@
                     },
                     "ports": {
                         "input_level": 0.0,
-                        "output_level": 0.0,
+                        "output_level": -1.0491069555282593,
                         "buffered": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "audiofile": {
-                    "bypassed": true,
+                "notes": {
+                    "bypassed": false,
                     "parameters": {
-                        "http://kxstudio.sf.net/carla/file/audio": [
-                            "/home/pistomp/data/user-files/Audio Recordings/Metal Guitar Drop-C DI.wav",
-                            "p"
+                        "http://open-music-kontrollers.ch/lv2/notes#fontHeight": [
+                            "25",
+                            "i"
+                        ],
+                        "http://open-music-kontrollers.ch/lv2/notes#text": [
+                            "To use the Neural Amp Modeler for modeling, you must first download some models:\n- Audition/Download from:  tone3000.com\n- In this UI, Click File Manager (bottom left)\n- Click \"NAM Models\" folder\n- Click Upload, select files previously downloaded from tone3000.com\n- On pi-Stomp: System Menu > Restart sound engine\n- Now you should be able to select the .nam files in the NAM plugin",
+                            "s"
                         ]
                     },
+                    "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
                     "ports": {
-                        "lv2_freewheel": 0.0,
-                        "loop_mode": 1.0,
-                        "host_sync": 0.0,
-                        "volume": 100.0,
-                        "enabled": 0.0
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5605469942092896,
+                        "enable": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -318,16 +294,6 @@
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
-                },
-                "a_reverb": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "blend": 0.30000001192092896,
-                        "roomsz": 0.560546875,
-                        "enable": 1.0
-                    },
-                    "preset": ""
                 }
             }
         }

@@ -10,6 +10,6 @@
 	a pset:Preset ;
 	lv2:appliesTo <http://kxstudio.sf.net/carla/plugins/audiofile> ;
 	state:state [
-		<http://kxstudio.sf.net/ns/carla/file> <Metal%20Guitar%20DI.wav>
+		<http://kxstudio.sf.net/ns/carla/file> <Metal%20Guitar%20Drop-C%20DI.wav>
 	] .
 
