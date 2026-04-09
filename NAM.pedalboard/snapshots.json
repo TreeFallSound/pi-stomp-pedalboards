@@ -1,5 +1,5 @@
 {
-    "current": 0,
+    "current": 1,
     "snapshots": [
         {
             "name": "Default",
@@ -19,18 +19,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "stereo": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "gain": 0.0,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
                 "neural_amp_modeler_lv2": {
                     "bypassed": false,
                     "parameters": {
@@ -41,25 +29,43 @@
                     },
                     "ports": {
                         "input_level": 0.0,
-                        "output_level": 0.0,
+                        "output_level": -6.1383928571428505,
                         "buffered": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "reverb_1": {
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "decay": 2800.0,
-                        "drylevel": -4.0,
-                        "wetlevel": -23.3482142857143,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 1.0,
-                        "mode": 27.0
+                        "Attenuation": 0.0,
+                        "Model": 11.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -3.058035714285708,
+                        "enable": 1.0,
+                        "mute": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -82,27 +88,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "cabsim": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "Attenuation": 0.0,
-                        "Model": 11.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "a_reverb": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "blend": 0.30000001192092896,
-                        "roomsz": 0.5680803571428571,
-                        "enable": 0.0
-                    },
-                    "preset": ""
-                },
                 "notes_1": {
                     "bypassed": false,
                     "parameters": {
@@ -116,6 +101,25 @@
                         ]
                     },
                     "ports": {},
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Eq10": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": 0.0,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": 0.0,
+                        "band4khz": 0.0,
+                        "band8khz": 0.0,
+                        "band16khz": 0.0
+                    },
                     "preset": ""
                 }
             }
@@ -138,18 +142,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "stereo": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "gain": 0.0,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
                 "neural_amp_modeler_lv2": {
                     "bypassed": false,
                     "parameters": {
@@ -167,18 +159,36 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "reverb_1": {
+                "a_reverb": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "decay": 2800.0,
-                        "drylevel": -4.0,
-                        "wetlevel": -23.34821319580078,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 1.0,
-                        "mode": 27.0
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 1.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "Attenuation": 0.0,
+                        "Model": 12.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": 0.0,
+                        "enable": 1.0,
+                        "mute": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -201,27 +211,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "cabsim": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "Attenuation": 0.0,
-                        "Model": 12.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "a_reverb": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "blend": 0.30000001192092896,
-                        "roomsz": 0.5680803571428571,
-                        "enable": 0.0
-                    },
-                    "preset": ""
-                },
                 "notes_1": {
                     "bypassed": false,
                     "parameters": {
@@ -235,7 +224,28 @@
                         ]
                     },
                     "ports": {},
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Eq10": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": 0.0,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": 0.0,
+                        "band4khz": 0.0,
+                        "band8khz": 0.0,
+                        "band16khz": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
@@ -257,18 +267,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "stereo": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "gain": 0.0,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
                 "neural_amp_modeler_lv2": {
                     "bypassed": false,
                     "parameters": {
@@ -279,25 +277,43 @@
                     },
                     "ports": {
                         "input_level": 0.0,
-                        "output_level": 0.0,
+                        "output_level": -7.098214285714278,
                         "buffered": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "reverb_1": {
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.30000001192092896,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "decay": 2800.0,
-                        "drylevel": -4.0,
-                        "wetlevel": -27.90178571428573,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 1.0,
-                        "mode": 14.0
+                        "Attenuation": 0.0,
+                        "Model": 3.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -3.013392857142854,
+                        "enable": 1.0,
+                        "mute": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -320,27 +336,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "cabsim": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "Attenuation": 0.0,
-                        "Model": 3.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "a_reverb": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "blend": 0.30000001192092896,
-                        "roomsz": 0.5680803571428571,
-                        "enable": 0.0
-                    },
-                    "preset": ""
-                },
                 "notes_1": {
                     "bypassed": false,
                     "parameters": {
@@ -354,7 +349,28 @@
                         ]
                     },
                     "ports": {},
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Eq10": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": 0.0,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": -2.156250000000007,
+                        "band4khz": -3.6026785714285765,
+                        "band8khz": -4.245535714285637,
+                        "band16khz": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
@@ -366,23 +382,11 @@
                     "parameters": {},
                     "ports": {
                         "BYPASS": 1.0,
-                        "BRIGHT": 0.048549000173807144,
+                        "BRIGHT": 0.0,
                         "GATE": -43.91461944580078,
                         "ATTACK": 2.0,
                         "DRIVE": 0.27734374999999994,
                         "LEVEL": -10.450892857142858
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "stereo": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "gain": 0.0,
-                        "enable": 1.0,
-                        "mute": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -398,25 +402,43 @@
                     },
                     "ports": {
                         "input_level": 0.0,
-                        "output_level": 0.0,
+                        "output_level": -7.90178571428571,
                         "buffered": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "reverb_1": {
+                "a_reverb": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "blend": 0.11830357142857145,
+                        "roomsz": 0.5680803571428571,
+                        "enable": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "cabsim": {
                     "bypassed": false,
                     "parameters": {},
                     "ports": {
-                        "decay": 2800.0,
-                        "drylevel": -4.0,
-                        "wetlevel": -27.90178571428573,
-                        "combs_en": 1.0,
-                        "allps_en": 1.0,
-                        "bandpass_en": 1.0,
-                        "stereo_enh": 1.0,
-                        "mode": 14.0
+                        "Attenuation": 0.0,
+                        "Model": 3.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -5.937499999999993,
+                        "enable": 1.0,
+                        "mute": 0.0
                     },
                     "preset": "",
                     "bpm": 120.0,
@@ -439,27 +461,6 @@
                     "bpm": 120.0,
                     "bpb": 4.0
                 },
-                "cabsim": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "Attenuation": 0.0,
-                        "Model": 3.0
-                    },
-                    "preset": "",
-                    "bpm": 120.0,
-                    "bpb": 4.0
-                },
-                "a_reverb": {
-                    "bypassed": true,
-                    "parameters": {},
-                    "ports": {
-                        "blend": 0.30000001192092896,
-                        "roomsz": 0.5680803571428571,
-                        "enable": 0.0
-                    },
-                    "preset": ""
-                },
                 "notes_1": {
                     "bypassed": false,
                     "parameters": {
@@ -473,7 +474,28 @@
                         ]
                     },
                     "ports": {},
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Eq10": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "band31hz": 0.0,
+                        "band63hz": 0.0,
+                        "band125hz": 0.0,
+                        "band250hz": 0.0,
+                        "band500hz": 0.0,
+                        "band1khz": 0.0,
+                        "band2khz": -2.156250000000007,
+                        "band4khz": -3.6026785714285765,
+                        "band8khz": -4.245535714285637,
+                        "band16khz": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         }

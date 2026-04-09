@@ -15,6 +15,6 @@
 The cause is NaN (not a number) output from NAM.  A reverb/delay with feedback can recycle this bad output creating a nasty digital cacophony.
 
 A few reverbs seem to be NaN-safe including: DISTRHO DIE Reverb, and the X42 """ ;
-		<http://open-music-kontrollers.ch/lv2/notes#fontHeight> "25"^^xsd:int
+		<http://open-music-kontrollers.ch/lv2/notes#fontHeight> "20"^^xsd:int
 	] .
 
