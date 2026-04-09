@@ -1,21 +1,12 @@
 {
-    "current": 0,
+    "current": 3,
     "snapshots": [
         {
             "name": "Default",
             "data": {
-                "CABINET": {
-                    "bypassed": true,
-                    "ports": {
-                        "CLevel": 1.5,
-                        "CBass": 0.0,
-                        "CTreble": 0.0,
-                        "c_model": 0.0
-                    },
-                    "preset": ""
-                },
                 "GUITARIX": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "MasterGain": -15.267857142857142,
                         "PreGain": 9.955357142857146,
@@ -30,38 +21,37 @@
                         "t_model": 9.0,
                         "c_model": 0.0
                     },
-                    "preset": ""
-                },
-                "Noisegate": {
-                    "bypassed": false,
-                    "ports": {
-                        "open": -19.88839285714286,
-                        "attack": 0.05580357142857143,
-                        "close": -51.42857142857143,
-                        "mains": 60.0
-                    },
-                    "preset": ""
-                },
-                "_DOP250_": {
-                    "bypassed": false,
-                    "ports": {
-                        "BYPASS": 1.0,
-                        "GAIN": 0.5915178571428571,
-                        "LEVEL": 0.47098214285714285
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "BigMuffPi": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "Tone": 0.5915178571428572,
                         "Level": 0.17745535714285715,
                         "Sustain": 0.31584821428571425
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "_DOP250_": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "BYPASS": 1.0,
+                        "GAIN": 0.5915178571428571,
+                        "LEVEL": 0.47098214285714285
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chor": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
                         "WETDRY": 78.0,
@@ -77,10 +67,63 @@
                         "SUB": 0.0,
                         "INTENSE": 0.0
                     },
-                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1"
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -9.151785714285714,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "CABINET": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "open": -19.88839285714286,
+                        "attack": 0.05580357142857143,
+                        "close": -51.42857142857143,
+                        "mains": 60.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "wah": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "fslider1_": 0.88189,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.6961495535028266
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "echo": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "ldelay": 62.5,
                         "lfeedback": 50.0,
@@ -93,19 +136,13 @@
                         "haaseffect": 1.0,
                         "swapoutputs": 0.0
                     },
-                    "preset": ""
-                },
-                "mono_1": {
-                    "bypassed": false,
-                    "ports": {
-                        "gain": -7.678571428571425,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "reverb": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "decay": 2109.3749999999995,
                         "drylevel": -5.446428571428569,
@@ -116,44 +153,18 @@
                         "stereo_enh": 0.0,
                         "mode": 16.0
                     },
-                    "preset": ""
-                },
-                "wah": {
-                    "bypassed": true,
-                    "ports": {
-                        "fslider1_": 0.88189,
-                        "faslider0_": 0.10000000149011612,
-                        "faslider1_": 0.6961495535028266
-                    },
-                    "preset": ""
-                },
-                "stereo": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "gain": -7.031249999999993,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
         {
             "name": "Alice",
             "data": {
-                "CABINET": {
-                    "bypassed": true,
-                    "ports": {
-                        "CLevel": 1.5,
-                        "CBass": 0.0,
-                        "CTreble": 0.0,
-                        "c_model": 0.0
-                    },
-                    "preset": ""
-                },
                 "GUITARIX": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "MasterGain": -15.401785714285714,
                         "PreGain": 9.955357142857146,
@@ -162,44 +173,43 @@
                         "Middle": 0.5625,
                         "Bass": 0.390625,
                         "Treble": 0.6584821428571429,
-                        "Cabinet": 12.684151785714292,
+                        "Cabinet": 11.899553571428568,
                         "Presence": 5.0,
                         "model": 0.0,
                         "t_model": 9.0,
                         "c_model": 18.0
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
-                "Noisegate": {
+                "BigMuffPi": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
-                        "open": -18.415178571428577,
-                        "attack": 0.05580357142857143,
-                        "close": -49.55357142857143,
-                        "mains": 60.0
+                        "Tone": 0.6216517857142858,
+                        "Level": 0.125,
+                        "Sustain": 0.25
                     },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "_DOP250_": {
                     "bypassed": true,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
                         "GAIN": 0.5859375000000001,
                         "LEVEL": 0.47098214285714285
                     },
-                    "preset": ""
-                },
-                "BigMuffPi": {
-                    "bypassed": false,
-                    "ports": {
-                        "Tone": 0.6216517857142858,
-                        "Level": 0.1640625,
-                        "Sustain": 0.25
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "chor": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "BYPASS": 0.0,
                         "WETDRY": 78.0,
@@ -215,10 +225,63 @@
                         "SUB": 0.0,
                         "INTENSE": 0.0
                     },
-                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1"
+                    "preset": "http://rakarrack.sourceforge.net/effects.html#chor:preset:chorus_1",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "stereo": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "gain": -11.25,
+                        "enable": 1.0,
+                        "mute": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "CABINET": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "CLevel": 1.5,
+                        "CBass": 0.0,
+                        "CTreble": 0.0,
+                        "c_model": 0.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "Noisegate": {
+                    "bypassed": false,
+                    "parameters": {},
+                    "ports": {
+                        "open": -18.415178571428577,
+                        "attack": 0.05580357142857143,
+                        "close": -49.55357142857143,
+                        "mains": 60.0
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
+                },
+                "wah": {
+                    "bypassed": true,
+                    "parameters": {},
+                    "ports": {
+                        "fslider1_": 0.0,
+                        "faslider0_": 0.10000000149011612,
+                        "faslider1_": 0.7016741070755029
+                    },
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "echo": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "ldelay": 62.5,
                         "lfeedback": 50.0,
@@ -231,19 +294,13 @@
                         "haaseffect": 1.0,
                         "swapoutputs": 0.0
                     },
-                    "preset": ""
-                },
-                "mono_1": {
-                    "bypassed": false,
-                    "ports": {
-                        "gain": -7.678571428571425,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 },
                 "reverb": {
                     "bypassed": false,
+                    "parameters": {},
                     "ports": {
                         "decay": 2109.3749999999995,
                         "drylevel": -5.446428571428569,
@@ -254,26 +311,9 @@
                         "stereo_enh": 0.0,
                         "mode": 16.0
                     },
-                    "preset": ""
-                },
-                "wah": {
-                    "bypassed": true,
-                    "ports": {
-                        "fslider1_": 0.0,
-                        "faslider0_": 0.10000000149011612,
-                        "faslider1_": 0.7016741070755029
-                    },
-                    "preset": ""
-                },
-                "stereo": {
-                    "bypassed": false,
-                    "parameters": {},
-                    "ports": {
-                        "gain": -7.031249999999993,
-                        "enable": 1.0,
-                        "mute": 0.0
-                    },
-                    "preset": ""
+                    "preset": "",
+                    "bpm": 120.0,
+                    "bpb": 4.0
                 }
             }
         },
